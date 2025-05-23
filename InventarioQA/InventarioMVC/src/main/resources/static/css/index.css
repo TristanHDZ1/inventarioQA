@@ -1,8 +1,14 @@
+/* =======================
+   CSS MEJORADO PARA EQUIPO QA
+   ======================= */
+
 :root {
-  --verde-principal: #2c8a7f;
-  --verde-oscuro: #1e5d54;
-  --verde-suave: #3ab98a;
+  --verde-principal: #0660f1;
+  --verde-oscuro: #283caf;
+  --verde-suave: #00bfff;
+  --verde-claro: #e6edf5;
   --blanco: #ffffff;
+  --gris-claro: #f7f9fa;
 }
 
 body {
@@ -14,26 +20,28 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  line-height: 1.6;
 }
 
 header {
-  background-color: var(--blanco);
+  background-color: var(--verde-claro);
   padding: 100px 20px;
   text-align: center;
+  box-shadow: 0 2px 8px var(--sombra-suave);
 }
 
 header h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3rem;
   color: var(--verde-principal);
-  margin: 0;
+  margin-bottom: 15px;
 }
 
 header p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   max-width: 700px;
-  margin: 20px auto 0;
-  line-height: 1.5;
+  margin: 0 auto;
+  line-height: 1.6;
   color: var(--verde-oscuro);
 }
 
@@ -45,10 +53,11 @@ header p {
   padding: 12px 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 6px;
+  border-radius: 8px;
   display: inline-block;
   text-decoration: none;
   font-size: 1rem;
+  box-shadow: 0 2px 8px var(--sombra-suave);
 }
 
 .btn-custom:hover,
@@ -59,16 +68,17 @@ header p {
 }
 
 section {
-  padding: 80px 15px;
+  padding: 80px 20px;
   flex-grow: 1;
-  background-color: var(--blanco);
+  background-color: var(--gris-claro);
 }
 
 h2 {
   font-family: 'Orbitron', sans-serif;
   color: var(--verde-principal);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .valor {
@@ -79,18 +89,21 @@ h2 {
   transition: all 0.3s ease;
   height: 100%;
   color: var(--verde-principal);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px var(--sombra-suave);
 }
 
 .valor:hover {
   transform: translateY(-5px);
-  background-color: var(--verde-suave);
+  background-color: var(--verde-principal);
   color: var(--blanco);
 }
 
 .card-panel {
   background-color: var(--blanco) !important;
   border-left: 5px solid var(--verde-principal);
+  box-shadow: 0 4px 12px var(--sombra-suave);
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .teal-text.text-darken-4 {
@@ -98,17 +111,23 @@ h2 {
 }
 
 footer {
-  background-color: var(--blanco);
+  background-color: var(--verde-principal);
   text-align: center;
-  padding: 20px;
-  color: var(--verde-principal);
+  padding: 25px;
+  color: var(--blanco);
 }
 
 .video-section {
   text-align: center;
   background-color: var(--blanco);
-  padding: 50px 20px;
+  padding: 60px 20px;
   color: var(--verde-principal);
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--sombra-suave);
 }
 
 .btn-video {
@@ -117,6 +136,7 @@ footer {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .btn-video:hover {
@@ -134,3 +154,54 @@ footer {
 .input-field textarea:focus + label {
   color: var(--verde-principal);
 }
+
+.input-field input,
+.input-field textarea {
+  border-bottom: 1px solid var(--verde-principal);
+  box-shadow: none;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-bottom: 2px solid var(--verde-suave);
+  box-shadow: 0 1px 0 0 var(--verde-suave);
+}
+
+
+.tech-bar {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 20s linear infinite;
+  align-items: center;
+  gap: 30px;
+  transform: translateX(100%);
+  user-select: none;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  color: var(--blanco);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tech-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
