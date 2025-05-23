@@ -12,5 +12,8 @@ public class InventarioController {
     public String Principal() {
         return "Principal";
     }
-
+    @GetMapping("/Login/")
+    public String Login() {
+        return "Login";
+    }
 }

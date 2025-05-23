@@ -17,9 +17,9 @@
 
   <!-- Enlace al CSS externo -->
   <link rel="stylesheet" th:href="@{/css/index.css}">
+  
 
   <style>
-    /* Estilos para la barra de tecnologías animada */
     :root {
       --verde-medio: #2c8a7f;
       --verde-suave: #a4d4c5;
@@ -58,53 +58,65 @@
       margin-bottom: 5px;
     }
     @keyframes scrollLeft {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
   </style>
 </head>
 <body>
 
-  <!-- BIENVENIDA -->
-  <header data-aos="fade-down">
-    <h1>¡Bienvenidos al equipo QA!</h1>
-    <p>Somos el equipo que garantiza calidad, precisión y pasión por el detalle. Probamos todo... ¡dos veces si es necesario!</p>
-    <a href="#valores" class="btn btn-custom btn-large mt-4">Descubre más</a>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Equipo QA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="../templates/Login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <!-- VALORES -->
-  <section id="valores" class="container">
-    <h2 class="text-center" data-aos="fade-up">Nuestros valores QA</h2>
-    <div class="row">
-      <div class="col-12 col-md-4 mb-4" data-aos="zoom-in">
-        <div class="valor text-center">
-          <h5>🔎 Precisión</h5>
-          <p>Analizamos hasta el último detalle para garantizar calidad impecable.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="valor text-center">
-          <h5>🚀 Compromiso</h5>
-          <p>Estamos presentes desde la planeación hasta el deploy final.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="valor text-center">
-          <h5>🤝 Trabajo en equipo</h5>
-          <p>Colaboramos, aprendemos juntos y crecemos como uno solo.</p>
-        </div>
+<!-- BIENVENIDA -->
+<header data-aos="fade-down" class="text-center p-4">
+  <h1>¡Bienvenidos al equipo QA!</h1>
+  <p>Somos el equipo que garantiza calidad, precisión y pasión por el detalle. Probamos todo... ¡dos veces si es necesario!</p>
+  <a href="#valores" class="btn btn-custom btn-large mt-4">Descubre más</a>
+</header>
+
+<!-- VALORES -->
+<section id="valores" class="container">
+  <h2 class="text-center" data-aos="fade-up">Nuestros valores QA</h2>
+  <div class="row">
+    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in">
+      <div class="valor text-center">
+        <h5>🔎 Precisión</h5>
+        <p>Analizamos hasta el último detalle para garantizar calidad impecable.</p>
       </div>
     </div>
-  </section>
+    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="valor text-center">
+        <h5>🚀 Compromiso</h5>
+        <p>Estamos presentes desde la planeación hasta el deploy final.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="valor text-center">
+        <h5>🤝 Trabajo en equipo</h5>
+        <p>Colaboramos, aprendemos juntos y crecemos como uno solo.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- EQUIPO -->
-  <!-- CONTENIDO CENTRAL CON SECCIONES IZQUIERDA Y DERECHA -->
+<!-- EQUIPO -->
 <section class="container">
-  <!-- SECCIÓN 1: IZQUIERDA (Texto) + DERECHA (Imagen) -->
   <div class="row valign-wrapper" data-aos="fade-right">
     <div class="col s12 m6">
       <div class="card-panel teal lighten-5 z-depth-3">
@@ -117,7 +129,6 @@
     </div>
   </div>
 
-  <!-- SECCIÓN 2: IZQUIERDA (Imagen) + DERECHA (Texto) -->
   <div class="row valign-wrapper" data-aos="fade-left">
     <div class="col s12 m6 center-align">
       <img src="https://voyager.postman.com/illustration/workspaces-blocks-postman-illustration.svg" alt="Misión QA" class="responsive-img" style="max-height: 300px;" />
@@ -129,110 +140,80 @@
       </div>
     </div>
   </div>
+</section>
 
-  
-
-  <!-- BARRA DE TECNOLOGÍAS -->
+<!-- BARRA DE TECNOLOGÍAS -->
 <section id="herramientas" class="tech-bar-container" aria-label="Tecnologías y herramientas usadas">
   <div class="tech-bar" aria-hidden="true">
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-      <span>JavaScript</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" />
-      <span>Postman</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" />
-      <span>Spring</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
-      <span>MySQL</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/jmeter.png" alt="JMeter" />
-      <span>JMeter</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      <span>GitHub</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://docs.usebruno.com/bruno.png" alt="Bruno" />
-      <span>Bruno</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" />
-      <span>FastAPI</span>
-    </div>
-    <div class="tech-item">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-      <span>Java</span>
-    </div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
+    <div class="tech-item"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" /><span>Postman</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" /><span>Spring</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></div>
+    <div class="tech-item"><img src="https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/jmeter.png" alt="JMeter" /><span>JMeter</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>GitHub</span></div>
+    <div class="tech-item"><img src="https://docs.usebruno.com/bruno.png" alt="Bruno" /><span>Bruno</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" /><span>FastAPI</span></div>
+    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>Java</span></div>
   </div>
+</section>
+
+<!-- VIDEO YOUTUBE -->
+<section class="video-section text-center" data-aos="zoom-in">
+  <h2>Video de presentación</h2>
+  <p>Conoce más sobre nuestro equipo y metodología de trabajo:</p>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HxPO7iwvsvc" title="Video de presentación"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- FORMULARIO DE CONTACTO -->
+<section id="contacto" class="container" data-aos="fade-up">
+  <h2 class="text-center mb-5">Contacto</h2>
+  <form class="contacto-form" id="contactForm" novalidate>
+    <div class="input-field mb-4">
+      <input id="nombre" name="nombre" type="text" required />
+      <label for="nombre">Nombre completo</label>
+      <span class="helper-text" data-error="Por favor, ingresa tu nombre"></span>
+    </div>
+    <div class="input-field mb-4">
+      <input id="email" name="email" type="email" required />
+      <label for="email">Correo electrónico</label>
+      <span class="helper-text" data-error="Correo inválido"></span>
+    </div>
+    <div class="input-field mb-4">
+      <textarea id="mensaje" name="mensaje" class="materialize-textarea" required></textarea>
+      <label for="mensaje">Mensaje</label>
+      <span class="helper-text" data-error="Por favor, ingresa un mensaje"></span>
+    </div>
+    <button class="btn btn-custom btn-large" type="submit">Enviar</button>
+  </form>
 </section>
 
 
 
+<!-- FOOTER -->
+<footer class="text-center p-4 bg-dark text-white mt-5">
+  <p>© 2025 Equipo QA - Todos los derechos reservados</p>
+</footer>
 
-  <!-- VIDEO YOUTUBE -->
-  <section class="video-section" data-aos="zoom-in">
-    <h2>Video de presentación</h2>
-    <p>Conoce más sobre nuestro equipo y metodología de trabajo dando clic en el siguiente enlace:</p>
-    <a href="https://www.youtube.com/watch?v=HxPO7iwvsvc" target="_blank" rel="noopener noreferrer" class="btn-video">Ver video en YouTube</a>
-  </section>
-
-  <!-- FORMULARIO DE CONTACTO -->
-  <section id="contacto" class="container" data-aos="fade-up">
-    <h2 class="text-center mb-5">Contacto</h2>
-    <form class="contacto-form" id="contactForm" novalidate>
-      <div class="input-field mb-4">
-        <input id="nombre" name="nombre" type="text" required />
-        <label for="nombre">Nombre completo</label>
-        <span class="helper-text" data-error="Por favor, ingresa tu nombre" data-success=""></span>
-      </div>
-
-      <div class="input-field mb-4">
-        <input id="email" name="email" type="email" required />
-        <label for="email">Correo electrónico</label>
-        <span class="helper-text" data-error="Correo inválido" data-success=""></span>
-      </div>
-
-      <div class="input-field mb-4">
-        <textarea id="mensaje" name="mensaje" class="materialize-textarea" required></textarea>
-        <label for="mensaje">Mensaje</label>
-        <span class="helper-text" data-error="Por favor, ingresa un mensaje" data-success=""></span>
-      </div>
-
-      <button class="btn btn-custom btn-large" type="submit">Enviar</button>
-    </form>
-  </section>
-
-  
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Equipo QA - Todos los derechos reservados</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-
-    // Validación simple del formulario con Materialize
-    document.addEventListener('DOMContentLoaded', function () {
-      const form = document.getElementById('contactForm');
-      form.addEventListener('submit', function (e) {
-        if (!form.checkValidity()) {
-          e.preventDefault();
-          M.toast({html: 'Por favor completa todos los campos correctamente.'});
-        }
-      });
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        M.toast({ html: 'Por favor completa todos los campos correctamente.' });
+      }
     });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
