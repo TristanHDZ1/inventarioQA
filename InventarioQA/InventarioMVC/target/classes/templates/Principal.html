@@ -18,75 +18,6 @@
   <!-- Enlace al CSS externo -->
   <link rel="stylesheet" th:href="@{/css/index.css}">
 
-  <style>
-    :root {
-      --verde-medio:rgb(248, 248, 248);
-      --verde-suave:rgb(106, 178, 241);
-    }
-    .tech-bar-container {
-      overflow: hidden;
-      background-color: var(--verde-medio);
-      border-radius: 20px;
-      margin: 40px auto;
-      max-width: 90vw;
-      box-shadow: 0 0 15px rgba(0,0,0,0.25);
-      padding: 15px 0;
-    }
-    .tech-bar {
-      display: flex;
-      width: max-content;
-      animation: scrollLeft 20s linear infinite;
-      align-items: center;
-      gap: 30px;
-      transform: translateX(100%);
-      user-select: none;
-    }
-    .tech-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 90px;
-      color: var(--verde-suave);
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    .tech-item img {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      margin-bottom: 5px;
-    }
-    @keyframes scrollLeft {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
-</head>
-<body>
-
-<!-- NAVBAR -->
-<style>
-  .navbar-verde {
-    background-color:rgb(0, 132, 255) !important; /* verde-principal */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .navbar-verde .nav-link {
-    color: white !important;
-    font-weight: bold;
-  }
-
-  .navbar-verde .nav-link:hover {
-    color:rgb(27, 150, 211) !important; /* verde-suave */
-  }
-
-  body {
-    padding-top: 70px; /* espacio para que no se tape el contenido */
-  }
-</style>
 
 
 <!-- Narvar-->
@@ -94,7 +25,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="https://cdn-icons-png.flaticon.com/128/9232/9232876.png" alt="QA Icon" width="30" height="30" class="me-2">
+      <img src="https://img.icons8.com/?size=160&id=UGmri04gGt7j&format=png" alt="QA Icon" width="30" height="30" class="me-2">
       Equipo QA
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -124,37 +55,54 @@
 </nav>
 
 
-<!-- BIENVENIDA -->
-<header data-aos="fade-down" class="text-center p-4">
-  <h1>¡Bienvenidos al equipo QA!</h1>
-  <p>Somos el equipo que garantiza calidad, precisión y pasión por el detalle. Probamos todo... ¡dos veces si es necesario!</p>
-  <a href="#valores" class="btn btn-custom btn-large mt-4">Descubre más</a>
-</header>
+<!-- INICIO -->
+<section class="hero-modern">
+  <div class="hero-content">
+    <h1>Bienvenidos<span class="highlight"> a nuestro espacio</span></h1>
+    <p>Donde la calidad del software comienza con pruebas inteligentes y compromiso total...</p>
+    <div class="row">
+      <a href="#contacto" class="btn-hero">Apply now</a>
+    </div>  
+  </div>  
+
+  <div class="hero-images">
+    <div class="hero-image-block"></div>
+    <div class="hero-image-block"></div>
+    <div class="hero-image-block"></div>
+  </div>
+</section>
+
+
 
 <!-- VALORES -->
 <section id="valores" class="container">
-  <h2 class="text-center" data-aos="fade-up">Nuestros valores QA</h2>
+  <h2 class="text-center" data-aos="fade-up">Nuestro equipo cuenta</h2>
   <div class="row">
     <div class="col-12 col-md-4 mb-4" data-aos="zoom-in">
       <div class="valor text-center">
-        <h5>🔎 Precisión</h5>
+        <img src="https://img.icons8.com/?size=96&id=ScJCfhkd77yD&format=png" alt="Precisión" style="width:80px; margin-bottom: 10px;">
+        <h5>Precisión</h5>
         <p>Analizamos hasta el último detalle para garantizar calidad impecable.</p>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
       <div class="valor text-center">
-        <h5>🚀 Compromiso</h5>
+        <img src="https://img.icons8.com/?size=96&id=syJFmi5G3Eeb&format=png" alt="Compromiso" style="width:80px; margin-bottom: 10px;">
+        <h5>Compromiso</h5>
         <p>Estamos presentes desde la planeación hasta el deploy final.</p>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
       <div class="valor text-center">
-        <h5>🤝 Trabajo en equipo</h5>
+        <img src="https://img.icons8.com/?size=96&id=CM6gGHrI7fs3&format=png" alt="Trabajo en equipo" style="width:80px; margin-bottom: 10px;">
+        <h5>Trabajo en equipo</h5>
         <p>Colaboramos, aprendemos juntos y crecemos como uno solo.</p>
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- EQUIPO -->
 <section class="container">
@@ -162,22 +110,36 @@
     <div class="col s12 m6">
       <div class="card-panel teal lighten-5 z-depth-3">
         <h5 class="teal-text text-darken-4">Nuestra Historia</h5>
-        <p>Somos un equipo apasionado por la calidad. Cada uno de nosotros aporta una pieza clave al desarrollo y mejora del producto.</p>
+        <p class="texto-justificado">
+          Somos un equipo unido por la pasión por la calidad. Desde nuestros inicios, hemos trabajado con compromiso,
+          curiosidad y mejora constante. Cada miembro aporta una visión única que fortalece el proceso y eleva el producto.
+          Creemos en detectar oportunidades, no solo errores, y en construir experiencias sólidas para el usuario final.
+        </p>
       </div>
     </div>
     <div class="col s12 m6 center-align">
-      <img src="https://64.media.tumblr.com/2e8986a1b1c062623cea1b9edaddcc52/tumblr_mup3qzOPsX1rk0k2jo1_500.gif" alt="Historia QA" class="responsive-img" style="max-height: 300px;" />
+      <img src="https://d36r73waboa44k.cloudfront.net/2024/11/Title_-What-is-software-testing_.png"
+           alt="Historia QA"
+           class="responsive-img imagen-equipo"
+           data-aos="zoom-in" />
     </div>
   </div>
 
   <div class="row valign-wrapper" data-aos="fade-left">
     <div class="col s12 m6 center-align">
-      <img src="https://voyager.postman.com/illustration/workspaces-blocks-postman-illustration.svg" alt="Misión QA" class="responsive-img" style="max-height: 300px;" />
+      <img src="https://erepa7ohg8r.exactdn.com/wp-content/uploads/2024/10/functional-cover.jpg"
+           alt="Misión QA"
+           class="responsive-img imagen-equipo"
+           data-aos="zoom-in" />
     </div>
     <div class="col s12 m6">
       <div class="card-panel teal lighten-5 z-depth-3">
         <h5 class="teal-text text-darken-4">Nuestra Misión</h5>
-        <p>Detectar errores antes de que lleguen al usuario final, asegurando una experiencia fluida, confiable y sin sorpresas.</p>
+        <p class="texto-justificado">
+          Garantizar que cada línea de código entregue valor real. Nos enfocamos en identificar fallos antes de que
+          lleguen al usuario final, anticipándonos a los problemas y asegurando una experiencia fluida, confiable y sin
+          interrupciones. Probamos con propósito, pensando siempre en la calidad como experiencia.
+        </p>
       </div>
     </div>
   </div>
@@ -201,7 +163,7 @@
 
 <!-- VIDEO YOUTUBE -->
 <section class="video-section" data-aos="zoom-in" style="padding: 2rem;">
-  <h2 style="text-align: center;">Video de presentación</h2>
+  <h2 style="text-align: center;">🎥Video de presentación</h2>
   <p style="text-align: center;">Conoce más sobre nuestro equipo y metodología de trabajo:</p>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 2rem; margin-top: 2rem;">
     
@@ -229,59 +191,59 @@
 </section>
 
 
-<!-- SECCIÓN DE CONTACTO EN DOS COLUMNAS MEJORADA -->
+<!-- SECCIÓN DE CONTACTO MEJORADA CON ESTILO OSCURO -->
 <section id="contacto" class="container py-5" data-aos="fade-up">
   <div class="row justify-content-center align-items-center">
     
     <!-- Columna Izquierda: Información de contacto con íconos -->
     <div class="col-md-6 mb-4 mb-md-0">
-      <h2 class="mb-3">¿Tienes alguna duda?</h2>
-      <p style="font-size: 1.1rem;">
+      <h2 class="mb-4">¿Tienes alguna duda?</h2>
+      <p style="font-size: 1.1rem; color: var(--text-light);">
         Si deseas comunicarte con nosotros, puedes usar el formulario o escribirnos directamente a través de los siguientes medios:
       </p>
 
       <ul class="list-unstyled mt-4" style="font-size: 1.1rem;">
         <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 24px; margin-right: 10px;">
-          <a href="mailto:equipoqa@gmail.com" target="_blank" style="text-decoration: none; color: #000;">equipoQA@gmail.com</a>
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 28px; margin-right: 12px;">
+          <a href="mailto:equipoqa@gmail.com" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">equipoQA@gmail.com</a>
         </li>
         <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width: 24px; margin-right: 10px;">
-          <a href="https://www.instagram.com/dicio.ai/" target="_blank" style="text-decoration: none; color: #000;">@Dicio</a>
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width: 28px; margin-right: 12px;">
+          <a href="https://www.instagram.com/dicio.ai/" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">@Dicio</a>
         </li>
         <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width: 24px; margin-right: 10px;">
-          <a href="https://github.com" target="_blank" style="text-decoration: none; color: #000;">github.com</a>
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width: 28px; margin-right: 12px;">
+          <a href="https://github.com" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">github.com</a>
         </li>
         <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Teléfono" style="width: 24px; margin-right: 10px;">
-          <span>+52 55 1234 5678</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Teléfono" style="width: 28px; margin-right: 12px;">
+          <span style="color: var(--text-light); font-weight: 500;">+52 55 1234 5678</span>
         </li>
       </ul>
     </div>
 
     <!-- Columna Derecha: Formulario de contacto -->
     <div class="col-md-6">
-      <form id="contactForm" novalidate style="background: #f8f9fa; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-        <h4 class="mb-4 text-center">Formulario de contacto</h4>
+      <form id="contactForm" class="fade-in-scale" novalidate style="background: var(--card-gradient); padding: 2rem; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.5);">
+        <h4 class="mb-4 text-center" style="color: var(--accent-color);">Formulario de contacto</h4>
 
         <div class="mb-3">
           <label for="nombre" class="form-label">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" class="form-control" required>
+          <input id="nombre" name="nombre" type="text" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
         </div>
 
         <div class="mb-3">
           <label for="email" class="form-label">Correo electrónico</label>
-          <input id="email" name="email" type="email" class="form-control" required>
+          <input id="email" name="email" type="email" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
         </div>
 
         <div class="mb-3">
           <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required></textarea>
         </div>
 
-        <div class="text-center mt-3">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn-hero">Enviar mensaje</button>
         </div>
       </form>
     </div>

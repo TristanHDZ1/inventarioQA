@@ -2,229 +2,62 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Login Inventario</title>
+
+  <!-- Bootstrap y Fuentes -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron&display=swap" rel="stylesheet">
 
-    body {
-      background: #f1f5f9;
-      padding-top: 70px;
-      overflow-x: hidden;
-    }
-
-    /* NAVBAR */
-    .navbar-verde {
-      background-color: rgb(0, 132, 255) !important;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-    }
-
-    .navbar-verde .navbar-brand,
-    .navbar-verde .nav-link {
-      color: white !important;
-      font-weight: bold;
-    }
-
-    .navbar-verde .nav-link:hover {
-      color: #dbeafe !important;
-    }
-
-    /* LOGIN CONTAINER */
-    .container-login {
-      width: 90%;
-      max-width: 900px;
-      height: 550px;
-      display: flex;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      margin: auto;
-      animation: fadeInScale 1s ease-out;
-    }
-
-    @keyframes fadeInScale {
-      0% {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    .left-panel {
-      background-color: rgb(0, 132, 255);
-      color: white;
-      width: 50%;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .left-panel img {
-      width: 100px;
-      margin-bottom: 1.5rem;
-      animation: bounceIn 1.5s ease;
-    }
-
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0.3);
-        opacity: 0;
-      }
-      50% {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-      70% {
-        transform: scale(0.9);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    .left-panel h2 {
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
-
-    .right-panel {
-      background-color: #0f172a;
-      color: #fff;
-      width: 50%;
-      padding: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    form label {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-    }
-
-    input[type="email"],
-    input[type="password"] {
-      width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.3rem;
-      background-color: #1e293b;
-      border: none;
-      border-bottom: 1px solid #334155;
-      color: #fff;
-      border-radius: 6px;
-      outline: none;
-    }
-
-    .checkbox {
-      display: flex;
-      align-items: center;
-      margin-top: 1rem;
-    }
-
-    .checkbox input {
-      margin-right: 0.5rem;
-    }
-
-    .checkbox label {
-      font-size: 0.9rem;
-      margin-bottom: 0;
-    }
-
-    .submit-btn {
-      margin-top: 2rem;
-      background-color: #3b82f6;
-      color: #fff;
-      padding: 0.6rem 2rem;
-      border: none;
-      border-radius: 20px;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
-      transition: background-color 0.3s ease;
-    }
-
-    .submit-btn:hover {
-      background-color: #2563eb;
-    }
-
-    @media (max-width: 768px) {
-      .container-login {
-        flex-direction: column;
-        height: auto;
-      }
-
-      .left-panel, .right-panel {
-        width: 100%;
-        padding: 2rem;
-        height: auto;
-      }
-
-      .left-panel img {
-        width: 80px;
-      }
-    }
-  </style>
+  <!-- Tu CSS principal -->
+  <link rel="stylesheet" th:href="@{/css/index.css}">
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand navbar-dark navbar-verde shadow-sm py-3">
-    <div class="container-fluid px-4">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm py-3">
+    <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="https://cdn-icons-png.flaticon.com/128/9232/9232876.png" alt="QA Icon" width="30" height="30" class="me-2">
+        <img src="https://img.icons8.com/?size=160&id=UGmri04gGt7j&format=png" alt="QA Icon" width="30" height="30" class="me-2">
         Equipo QA
       </a>
-      <ul class="navbar-nav ms-auto gap-3">
-        <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="/home/Principal/">
-            <i class="bi bi-house-door-fill me-1"></i> Regresar
-          </a>
-        </li>
-        <li class="nav-item">
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link active d-flex align-items-center" href="/home/Principal/">
+              <i class="bi bi-house-door-fill me-1"></i> Regresar
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <!-- LOGIN CONTAINER -->
-  <div class="container-login mt-5">
+  <!-- LOGIN -->
+  <div class="container-login fade-in-scale">
     <div class="left-panel">
-      <img src="https://cdn-icons-png.flaticon.com/128/12449/12449018.png" alt="Icono Inventario">
-      <h2>Bienvenido al apartado<br>de inventario</h2>
+      <img src="https://cdn-icons-png.flaticon.com/128/12449/12449018.png" alt="Icono Inventario" class="animated-icon" />
+      <h2 class="titulo-login">Bienvenido al apartado<br>de inventario</h2>
     </div>
 
     <div class="right-panel">
-      <form>
-        <label for="email">username</label>
-        <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+      <form action="/login" method="post" autocomplete="off" spellcheck="false">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" name="username" placeholder="usuario" required autocomplete="username" class="input-login" />
 
-        <label for="password">password</label>
-        <input type="password" id="password" placeholder="********" required>
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="********" required autocomplete="current-password" class="input-login" />
 
         <div class="checkbox">
-          <input type="checkbox" id="remember">
+          <input type="checkbox" id="remember" name="remember" />
           <label for="remember">Recordarme</label>
         </div>
 
-        <button type="submit" class="submit-btn">Iniciar Sesión</button>
+        <button type="submit" class="btn-custom mt-4">Iniciar Sesión</button>
       </form>
     </div>
   </div>
