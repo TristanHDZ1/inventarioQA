@@ -1,10 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dashboard | Inventario de Dispositivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/dashboard.css}">
 </head>
 <body>
 
+<!-- Narvar-->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://img.icons8.com/?size=160&id=UGmri04gGt7j&format=png" alt="QA Icon" width="30" height="30" class="me-2">
+            Equipo QA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item">
+                    <a class="nav-link active d-flex align-items-center" href="#">
+                        <i class="bi bi-house-door-fill me-1"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#contacto">
+                        <i class="bi bi-envelope-fill me-1"></i> Contacto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="/home/Login/">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header class="dashboard-header">
+    <div class="container">
+        <h1 class="titulo-dashboard">Inventario de Dispositivos</h1>
+        <p class="subtitulo-dashboard">Panel de control para consultar el inventario detallado</p>
+    </div>
+</header>
+
+<section class="container mt-4 fade-in-dashboard">
+    <div class="card-panel-dashboard">
+        <table class="table table-dark table-bordered table-hover tabla-dashboard">
+            <thead>
+            <tr>
+                <th># Placa</th>
+                <th>Producto</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Usuario Actual</th>
+                <th>Acción</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="d : ${dispositivos}">
+                <td th:text="${d.numeroPlacaActivoFijo}">N/A</td>
+                <td th:text="${d.producto}">Producto</td>
+                <td th:text="${d.marca}">Marca</td>
+                <td th:text="${d.modelo}">Modelo</td>
+                <td th:text="${d.usuarioActual}">Usuario</td>
+                <td>
+                    <button class="btn btn-info btn-sm" data-bs-toggle="modal" th:attr="data-bs-target='#detalleModal__${d.id}'">
+                        <i class="bi bi-info-circle-fill"></i> Detalles
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Modales de detalles -->
+<div th:each="d : ${dispositivos}">
+    <div class="modal fade" th:id="'detalleModal__' + ${d.id}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content modal-dashboard">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del dispositivo ID <span th:text="${d.id}">1</span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-md-6"><strong>Factura:</strong> <span th:text="${d.factura}">Factura</span></div>
+                        <div class="col-md-6"><strong>CeCo:</strong> <span th:text="${d.cecoOperativo}">CeCo</span></div>
+                        <div class="col-md-6"><strong>Producto:</strong> <span th:text="${d.producto}">Producto</span></div>
+                        <div class="col-md-6"><strong>Marca:</strong> <span th:text="${d.marca}">Marca</span></div>
+                        <div class="col-md-6"><strong>Modelo:</strong> <span th:text="${d.modelo}">Modelo</span></div>
+                        <div class="col-md-6"><strong>Serie:</strong> <span th:text="${d.serie}">Serie</span></div>
+                        <div class="col-md-6"><strong>IMEI:</strong> <span th:text="${d.imei}">IMEI</span></div>
+                        <div class="col-md-6"><strong>RAM:</strong> <span th:text="${d.ram}">RAM</span></div>
+                        <div class="col-md-6"><strong>Almacenamiento:</strong> <span th:text="${d.almacenamiento}">Alm.</span></div>
+                        <div class="col-md-6"><strong>Sistema Operativo:</strong> <span th:text="${d.sistemaOperativo}">SO</span></div>
+                        <div class="col-md-6"><strong>Teléfono:</strong> <span th:text="${d.numeroTelefono}">Tel</span></div>
+                        <div class="col-md-6"><strong>Asignado:</strong> <span th:text="${d.asignadoNombre}">Asignado</span></div>
+                        <div class="col-md-6"><strong>Entregado por:</strong> <span th:text="${d.entregadoPor}">Entregó</span></div>
+                        <div class="col-md-6"><strong>Fecha de Posesión:</strong> <span th:text="${d.fechaPosesion}">Fecha</span></div>
+                        <div class="col-md-6"><strong>Departamento:</strong> <span th:text="${d.departamentoResponsable}">Depto</span></div>
+                        <div class="col-md-6"><strong>Accesorios:</strong> <span th:text="${d.accesorios}">Acc.</span></div>
+                        <div class="col-md-6"><strong>Carta Entrega:</strong> <span th:text="${d.cartaEntrega}">Carta</span></div>
+                        <div class="col-md-6">
+                            <strong>Foto:</strong><br>
+                            <img th:src="@{'/' + ${d.fotoFrente}}" class="img-fluid" alt="Foto frente"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
