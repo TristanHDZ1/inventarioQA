@@ -26,7 +26,7 @@ public class InventarioController {
         return "Login";
     }
 
-    @GetMapping("/divices")
+    @GetMapping("/devices")
     public String verDispositivos(Model model) {
         List<Device> dispositivos = deviceRepository.findAll();
         model.addAttribute("dispositivos", dispositivos);
@@ -49,6 +49,6 @@ public class InventarioController {
     @PostMapping("/guardar-dispositivo")
     public String guardarDispositivo(@ModelAttribute Device device) {
         deviceRepository.save(device);
-        return "redirect:/home/ver-dispositivos";
+        return "redirect:/home/devices";
     }
 }
