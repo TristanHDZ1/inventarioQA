@@ -3,16 +3,16 @@
    ======================= */
 
 :root {
-  --primary-color: #8e2de2; /* morado brillante */
-  --secondary-color: #4a00e0; /* azul profundo */
-  --accent-color: #00c6ff; /* azul celeste */
-  --background-dark: #0f0f1c;
-  --background-gradient: linear-gradient(135deg, #0f0f1c, #1c1c3c);
+  --primary-color: #8e2de2; 
+  --secondary-color: #4a00e0; 
+  --accent-color: #ffffff; 
+  --background-dark: #000204;
+  --background-gradient: linear-gradient(135deg, #070707, #000074);
   --card-gradient: linear-gradient(145deg, #1b1b2f, #1f1f3f);
   --white: #ffffff;
   --light-gray: #dcdcdc;
   --text-light: #cfcfe6;
-  --hover-gradient: linear-gradient(90deg, #8e2de2, #4a00e0, #00c6ff);
+  --hover-gradient: linear-gradient(90deg, #0b03fc, #003bd0, #9367cd);
 }
 
 /* ======== GENERALES ======== */
@@ -40,22 +40,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-header h1 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 3rem;
-  background: var(--hover-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
-}
 
-header p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-  color: var(--text-light);
-}
 
 /* ======== BOTONES ======== */
 
@@ -89,15 +74,7 @@ section {
   background-color: transparent;
 }
 
-h2 {
-  font-family: 'Orbitron', sans-serif;
-  background: var(--hover-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 2.5rem;
-}
+
 
 /* ======== VALORES ======== */
 
@@ -338,7 +315,7 @@ footer {
   max-width: 300px;
   text-align: center;
   white-space: nowrap;
-  background-color: #0660f1;
+  background-color: #ffffff;
   color: #fff;
   border-radius: 8px;
   font-weight: bold;
@@ -395,7 +372,7 @@ footer {
 
 
 .imagen-equipo {
-  border: 4px solid #00acc1; /* Borde azul moderno */
+  border: 4px solid #f7f7f7; /* Borde azul moderno */
   border-radius: 12px;
   max-height: 300px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -559,6 +536,8 @@ footer {
   .texto-justificado {
   text-align: justify;
 }
+
+
 }
 
 

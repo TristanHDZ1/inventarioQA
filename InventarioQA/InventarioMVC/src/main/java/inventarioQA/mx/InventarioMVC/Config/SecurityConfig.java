@@ -18,7 +18,12 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/css/**", "/js/**", "/images/**", "/home/Principal/", "/home/Login/").permitAll()
-                .requestMatchers("/home/crear-dispositivo", "/home/editar-dispositivo/**", "/home/eliminar-dispositivo/**").hasRole("ADMIN")
+                .requestMatchers(
+                    "/home/nuevo-dispositivo", 
+                    "/home/editar-dispositivo/**", 
+                    "/home/eliminar-dispositivo/**", 
+                    "/home/guardar-dispositivo"
+                ).hasRole("ADMIN")
                 .requestMatchers("/home/devices").hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated()
             )
