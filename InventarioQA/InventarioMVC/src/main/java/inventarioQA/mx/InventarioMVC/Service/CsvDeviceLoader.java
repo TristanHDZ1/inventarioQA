@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
@@ -22,9 +23,15 @@ public class CsvDeviceLoader {
     CommandLineRunner loadDevices(DeviceRepository deviceRepository) {
         return args -> {
             if (deviceRepository.count() == 0) {
-                try (InputStreamReader reader = new InputStreamReader(
-                        getClass().getResourceAsStream("/dispositivos.csv"),
-                        StandardCharsets.UTF_8)) {
+                try {
+                    // ✅ Ruta corregida: busca en src/main/resources/
+                    InputStream inputStream = getClass().getResourceAsStream("/dispositivos.csv");
+
+                    if (inputStream == null) {
+                        throw new IllegalStateException("❌ Archivo dispositivos.csv no encontrado en /resources/");
+                    }
+
+                    InputStreamReader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
 
                     List<DeviceCSV> dispositivosCSV = new CsvToBeanBuilder<DeviceCSV>(reader)
                             .withType(DeviceCSV.class)
@@ -32,18 +39,26 @@ public class CsvDeviceLoader {
                             .build()
                             .parse();
 
-                    // Convertir a Device (modelo JPA)
                     List<Device> dispositivos = dispositivosCSV.stream().map(csv -> {
                         Device d = new Device();
-                        d.setNumero(csv.getNumero());
+
+                        // ✅ Conversión segura de String decimal a Integer
+                        try {
+                            d.setNumero(csv.getNumero() != null && !csv.getNumero().isBlank()
+                                    ? (int) Double.parseDouble(csv.getNumero())
+                                    : null);
+                        } catch (NumberFormatException e) {
+                            d.setNumero(null);
+                        }
+
                         d.setFactura(csv.getFactura());
                         d.setCecoOperativo(csv.getCecoOperativo());
                         d.setSoc(csv.getSoc());
                         d.setDm(csv.getDm());
-                        d.setPlacaActivoFijo(Boolean.parseBoolean(csv.getPlacaActivoFijo()));
+                        d.setPlacaActivoFijo("SI".equalsIgnoreCase(csv.getPlacaActivoFijo()));
                         d.setAsignadoNombre(csv.getAsignadoNombre());
                         d.setNumeroPlacaActivoFijo(csv.getNumeroPlacaActivoFijo());
-                        d.setAsignadoEnActivoFijo(Boolean.parseBoolean(csv.getAsignadoEnActivoFijo()));
+                        d.setAsignadoEnActivoFijo("SI".equalsIgnoreCase(csv.getAsignadoEnActivoFijo()));
                         d.setProducto(csv.getProducto());
                         d.setMarca(csv.getMarca());
                         d.setModelo(csv.getModelo());
@@ -59,7 +74,6 @@ public class CsvDeviceLoader {
                         d.setAccesorios(csv.getAccesorios());
                         d.setFolioCuboCargador(csv.getFolioCuboCargador());
 
-                        // Conversión segura de fecha
                         try {
                             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("d/M/yyyy");
                             d.setFechaPosesion(LocalDate.parse(csv.getFechaPosesion(), formatter));
@@ -70,16 +84,15 @@ public class CsvDeviceLoader {
                         d.setEntregadoPor(csv.getEntregadoPor());
                         d.setDepartamentoResponsable(csv.getDepartamentoResponsable());
                         d.setUsuarioActual(csv.getUsuarioActual());
-                        d.setCartaEntrega(csv.getCartaEntrega());
                         d.setAsignacionActual(csv.getAsignacionActual());
                         return d;
                     }).collect(Collectors.toList());
 
                     deviceRepository.saveAll(dispositivos);
-                    System.out.println("✔ CSV cargado correctamente.");
-
+                    System.out.println("✔ CSV cargado correctamente desde /resources.");
                 } catch (Exception e) {
                     System.out.println("❌ Error al cargar el CSV: " + e.getMessage());
+                    e.printStackTrace();
                 }
             } else {
                 System.out.println("🟡 Dispositivos ya existentes en la base de datos.");
