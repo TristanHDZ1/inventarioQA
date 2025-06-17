@@ -3,18 +3,18 @@
    ======================= */
 
 :root {
-  --primary-color: #8e2de2; 
-  --secondary-color: #4a00e0; 
-  --accent-color: #ffffff; 
-  --background-dark: #000204;
-  --background-gradient: linear-gradient(135deg, #070707, #000074);
-  --card-gradient: linear-gradient(145deg, #1b1b2f, #1f1f3f);
-  --white: #ffffff;
-  --light-gray: #dcdcdc;
-  --text-light: #cfcfe6;
-  --hover-gradient: linear-gradient(90deg, #0b03fc, #003bd0, #9367cd);
+  /* Paleta azul armonizada */
+  --primary-color:   #1E3A8A;  /* Azul oscuro fuerte */
+  --secondary-color: #2563EB;  /* Azul medio */
+  --accent-color:    #93C5FD;  /* Azul claro */
+  --background-dark: #0F172A;  /* Casi negro con matiz azul */
+  --background-gradient: linear-gradient(135deg, #0F172A, #1E40AF);
+  --card-gradient:   linear-gradient(145deg, #1E3A8A, #2563EB);
+  --white:           #ffffff;
+  --light-gray:      #cbd5e1;  /* Gris muy suave con toque frío */
+  --text-light:      #E0F2FE;  /* Texto casi blanco con tinte azul */
+  --hover-gradient:  linear-gradient(90deg, #3B82F6, #60A5FA, #93C5FD);
 }
-
 /* ======== GENERALES ======== */
 
 body {
@@ -225,6 +225,14 @@ footer {
   100% {
     transform: translateX(-100%);
   }
+
+  
+}
+
+/* Además un pequeño efecto hover en cada icono */
+.tech-item:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* ===== HERO MODERN ===== */
@@ -538,6 +546,155 @@ footer {
 }
 
 
+
+
+}
+/* ===== TESTIMONIOS (ajuste sin brillo) ===== */
+
+.testimonial-title {
+  color: var(--text-light);
+  font-size: 2.8rem;
+  font-weight: 700;
+  /* Eliminado text-shadow para evitar brillo */
 }
 
+.testimonial-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  padding: 30px 20px;
+}
 
+.testimonial-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.quote-icon {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  /* Sin animación extra para mantener simple */
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* Animaciones suaves sin brillo */
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicar animaciones si deseas */
+.quote-icon     { animation: popIn 0.5s ease-out; }
+.testimonial-text,
+.testimonial-author { animation: fadeInUp 0.7s ease-out; }
+
+/* ===== FAQ GLASSMORPHISM ===== */
+
+.faq-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 60px 30px;
+  margin-bottom: 80px;
+}
+
+.faq-title {
+  color: var(--text-light);
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Enlaces destacados */
+.highlight-link {
+  color: var(--accent-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.highlight-link:hover {
+  color: var(--white);
+}
+
+/* Accordion items */
+.accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 0.8rem;
+}
+
+/* Botones del accordion */
+.accordion-button {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-light);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+/* Cuerpo de la respuesta */
+.accordion-body {
+  margin-top: 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 0 0 12px 12px;
+  padding: 1rem 1.2rem;
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Evitar que el collapse “salte” */
+.accordion-collapse {
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+.testimonial-logo {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 80px;        /* ancho fijo */
+  height: 80px;       /* alto fijo */
+  object-fit: cover;  /* recorta si es necesario para llenar el área */
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-logo:hover {
+  transform: scale(1.1);
+}

@@ -51,4 +51,5 @@ public class InventarioController {
         deviceRepository.save(device);
         return "redirect:/home/devices";
     }
+    
 }
