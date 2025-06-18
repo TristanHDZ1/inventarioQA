@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Dashboard | Inventario de Dispositivos</title>
@@ -10,162 +12,163 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="/css/dashboard.css">
 
-  <!-- Estilos extra para scroll sólo en la tabla -->
   <style>
-    /* Evitar scroll global */
-    body {
-      overflow: hidden;
-    }
-    /* Contenedor principal en columna y de altura completa */
-    .main-content {
+    body { overflow: hidden; }
+    .main-content { display: flex; flex-direction: column; height: 100vh; }
+    .table-section { flex: 1; overflow-y: auto; }
+    .table-section .table-responsive { min-height: 0; }
+    .btn-group-actions {
       display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-    /* El header y navbar tendrán su tamaño natural; la sección de la tabla ocupa el resto */
-    .table-section {
-      flex: 1;
-      overflow-y: auto;
-    }
-    /* Ajuste para que el .table-responsive no expanda su contenedor */
-    .table-section .table-responsive {
-      min-height: 0;
+      justify-content: center;
+      gap: 0.3rem;
+      flex-wrap: wrap;
     }
   </style>
 </head>
 <body class="d-flex">
 
-  <!-- Sidebar -->
-  <nav class="sidebar bg-dark text-light p-3">
-    <h4 class="text-center mb-4">Mi Inventario</h4>
-    <ul class="nav flex-column">
-      <li class="nav-item mb-2">
-        <a class="nav-link text-light" href="#">
-          <i class="bi bi-speedometer2 me-2"></i> Dashboard
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="nav-link text-light" href="#">
-          <i class="bi bi-table me-2"></i> Dispositivos
-        </a>
-      </li>
-      <li class="nav-item mb-2">
-        <a class="nav-link text-light" href="#">
-          <i class="bi bi-gear me-2"></i> Configuración
-        </a>
-      </li>
-      <li class="nav-item mt-auto">
-        <a class="nav-link text-light" href="/logout">
-          <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
-        </a>
-      </li>
-    </ul>
+<!-- Sidebar -->
+<nav class="sidebar text-light p-3 d-flex flex-column" style="background-color: #1E3A8A;">
+  <h4 class="text-center mb-4">Mi Inventario</h4>
+  <ul class="nav flex-column mb-auto">
+    <li class="nav-item mb-2">
+      <a class="nav-link text-light" href="/home/dispositivos">
+        <i class="bi bi-laptop me-2"></i> Dispositivos
+      </a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link text-light" href="/home/miembros">
+        <i class="bi bi-people-fill me-2"></i> Miembros
+      </a>
+    </li>
+  </ul>
+  <div class="mt-auto">
+    <a class="nav-link text-light" href="/logout">
+      <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
+    </a>
+  </div>
+</nav>
+
+<!-- Main content -->
+<div class="flex-grow-1 main-content">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm">
+    <div class="container-fluid">
+      <button class="btn btn-outline-light d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target=".sidebar">
+        <i class="bi bi-list"></i>
+      </button>
+      <form class="d-flex ms-auto">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+        <button class="btn btn-sm btn-accent" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
   </nav>
 
-  <!-- Main content -->
-  <div class="flex-grow-1 main-content">
-
-    <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm">
-      <div class="container-fluid">
-        <button class="btn btn-outline-light d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target=".sidebar">
-          <i class="bi bi-list"></i>
-        </button>
-        <form class="d-flex ms-auto">
-          <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-          <button class="btn btn-sm btn-accent" type="submit"><i class="bi bi-search"></i></button>
-        </form>
-      </div>
-    </nav>
-
-    <!-- Header y métricas -->
-    <header class="p-4 bg-dark text-light">
-      <h1 class="h3">Inventario de Dispositivos</h1>
-      <p class="text-light-50">Panel de control para consultar el inventario detallado</p>
-      <div class="row gy-3">
-        <div class="col-md-3">
-          <div class="card card-metric">
-            <div class="card-body">
-              <h5>Total Dispositivos</h5>
-              <p th:text="${totalDispositivos}">0</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card card-metric">
-            <div class="card-body">
-              <h5>Asignados</h5>
-              <p th:text="${totalAsignados}">0</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card card-metric">
-            <div class="card-body">
-              <h5>Disponibles</h5>
-              <p th:text="${totalDisponibles}">0</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card card-metric">
-            <div class="card-body">
-              <h5>Bajo Stock</h5>
-              <p th:text="${totalBajoStock}">0</p>
-            </div>
+  <!-- Header -->
+  <header class="p-4 bg-dark text-light">
+    <h1 class="h3">Inventario de Dispositivos</h1>
+    <p class="text-light-50">Panel de control para consultar el inventario detallado</p>
+    <div class="row gy-3">
+      <div class="col-md-3">
+        <div class="card card-metric">
+          <div class="card-body">
+            <h5>Total Dispositivos</h5>
+            <p th:text="${totalDispositivos}">0</p>
           </div>
         </div>
       </div>
-    </header>
+      <div class="col-md-3">
+        <div class="card card-metric">
+          <div class="card-body">
+            <h5>Asignados</h5>
+            <p th:text="${totalAsignados}">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-metric">
+          <div class="card-body">
+            <h5>Disponibles</h5>
+            <p th:text="${totalDisponibles}">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-metric">
+          <div class="card-body">
+            <h5>Bajo Stock</h5>
+            <p th:text="${totalBajoStock}">0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- Sección scrollable sólo para la tabla -->
-    <section class="p-4 table-section">
-      <!-- Botón Nuevo -->
-      <a th:href="@{/home/nuevo-dispositivo}" class="btn btn-success mb-3">
+  <!-- Tabla de dispositivos -->
+  <section class="p-4 table-section">
+
+    <!-- Botón nuevo dispositivo (solo ADMIN) -->
+    <sec:authorize access="hasRole('ROLE_ADMIN')">
+      <a th:href="@{/nuevo-dispositivo}" class="btn btn-success mb-3">
         <i class="bi bi-plus-circle me-1"></i> Nuevo dispositivo
       </a>
+    </sec:authorize>
 
-      <div class="card-table">
-        <div class="table-responsive">
-          <table class="table table-dark table-hover align-middle">
-            <thead>
-              <tr>
-                <th># Placa</th>
-                <th>Producto</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Usuario</th>
-                <th class="text-center">Acción</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr th:each="d : ${dispositivos}">
-                <td th:text="${d.numeroPlacaActivoFijo}">N/A</td>
-                <td th:text="${d.producto}">Producto</td>
-                <td th:text="${d.marca}">Marca</td>
-                <td th:text="${d.modelo}">Modelo</td>
-                <td th:text="${d.usuarioActual}">Usuario</td>
-                <td class="text-center">
+    <div class="card-table">
+      <div class="table-responsive">
+        <table class="table table-dark table-hover align-middle">
+          <thead>
+            <tr>
+              <th># Placa</th>
+              <th>Producto</th>
+              <th>Marca</th>
+              <th>Modelo</th>
+              <th>Usuario</th>
+              <th class="text-center">Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="d : ${dispositivos}">
+              <td th:text="${d.numeroPlacaActivoFijo}">N/A</td>
+              <td th:text="${d.producto}">Producto</td>
+              <td th:text="${d.marca}">Marca</td>
+              <td th:text="${d.modelo}">Modelo</td>
+              <td th:text="${d.usuarioActual}">Usuario</td>
+              <td class="text-center">
+                <div class="btn-group-actions">
+                  <!-- Ver detalles (todos los roles) -->
                   <button class="btn btn-sm btn-info" data-bs-toggle="modal"
                           th:attr="data-bs-target='#detalleModal__${d.id}'">
                     <i class="bi bi-info-circle-fill"></i>
                   </button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+                  <!-- Editar y Eliminar (solo ADMIN) -->
+                  <sec:authorize access="hasRole('ROLE_ADMIN')">
+                    <a th:href="@{'/home/editar-dispositivo/' + ${d.id}}"
+                       class="btn btn-sm btn-warning">
+                      <i class="bi bi-pencil-fill"></i>
+                    </a>
+                    <a th:href="@{'/home/eliminar-dispositivo/' + ${d.id}}"
+                       class="btn btn-sm btn-danger">
+                      <i class="bi bi-trash-fill"></i>
+                    </a>
+                  </sec:authorize>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+    </div>
 
-      <!-- Modales de detalles (igual que antes) -->
-      <div th:each="d : ${dispositivos}">
-        <!-- ... mismo contenido de tu modal ... -->
-      </div>
-    </section>
+    <!-- Modales -->
+    <div th:each="d : ${dispositivos}">
+      <!-- Tus modales de detalles aquí -->
+    </div>
+  </section>
+</div>
 
-  </div><!-- /Main content -->
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

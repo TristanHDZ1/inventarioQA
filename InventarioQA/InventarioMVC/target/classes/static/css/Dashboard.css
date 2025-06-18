@@ -88,3 +88,54 @@ body {
     transform: translateX(0);
   }
 }
+
+/* ==== Mejoras visuales por sección ==== */
+header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 0 0 0.75rem 0.75rem;
+}
+
+.table-section {
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.card-metric {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-metric h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.card-metric p {
+  font-size: 1.75rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.btn-nuevo-dispositivo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-nuevo-dispositivo:hover {
+  background: var(--hover-gradient);
+  color: var(--white);
+}
+
+/* Acciones de tabla */
+.table .btn {
+  margin-left: 4px;
+}
+

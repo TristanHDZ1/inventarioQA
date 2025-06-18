@@ -45,8 +45,11 @@ public class CustomUserDetailsService implements UserDetailsService {
         return roles.stream()
             .map(role -> {
                 System.out.println("🔐 Rol: " + role.getName()); // muestra cada rol
-                return new SimpleGrantedAuthority("ROLE_" + role.getName());
+                return new SimpleGrantedAuthority("ROLE_" + role.getName().toUpperCase());
             })
             .collect(Collectors.toList());
     }
+
+
+    
 }

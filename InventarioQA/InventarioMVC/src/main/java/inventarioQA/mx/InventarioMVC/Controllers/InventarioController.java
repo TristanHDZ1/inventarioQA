@@ -33,10 +33,21 @@ public class InventarioController {
         return "devices";
     }
 
+     @GetMapping("/dispositivos")
+    public String dipositivos() {
+        return "dispositivos";
+    }
+
+     @GetMapping("/miembros")
+    public String miembros() {
+        return "miembros";
+    }
+
+     
     @GetMapping("/nuevo-dispositivo")
     public String nuevoDispositivo(Model model) {
         model.addAttribute("device", new Device());
-        return "formulario-dispositivo";
+        return "nuevo-dispositivo";
     }
 
     @GetMapping("/editar-dispositivo/{id}")
