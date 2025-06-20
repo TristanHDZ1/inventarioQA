@@ -58,10 +58,15 @@
       <button class="btn btn-outline-light d-lg-none me-2" type="button" data-bs-toggle="collapse" data-bs-target=".sidebar">
         <i class="bi bi-list"></i>
       </button>
-      <form class="d-flex ms-auto">
-        <input class="form-control form-control-sm me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
-        <button class="btn btn-sm btn-accent" type="submit"><i class="bi bi-search"></i></button>
-      </form>
+      <form class="d-flex ms-auto" th:action="@{/home/devices}" method="get">
+  <input class="form-control form-control-sm me-2" type="text" name="query" placeholder="Buscar..." th:value="${param.query}" />
+  <button class="btn btn-sm btn-accent me-2" type="submit">
+    <i class="bi bi-search"></i>
+  </button>
+  <a th:href="@{/home/devices}" class="btn btn-sm btn-secondary">
+    <i class="bi bi-arrow-clockwise"></i>
+  </a>
+</form>
     </div>
   </nav>
 
@@ -110,7 +115,7 @@
 
     <!-- Botón nuevo dispositivo (solo ADMIN) -->
     <sec:authorize access="hasRole('ROLE_ADMIN')">
-      <a th:href="@{/nuevo-dispositivo}" class="btn btn-success mb-3">
+      <a th:href="@{/home/nuevo-dispositivo}" class="btn btn-success mb-3">
         <i class="bi bi-plus-circle me-1"></i> Nuevo dispositivo
       </a>
     </sec:authorize>
@@ -137,11 +142,12 @@
               <td th:text="${d.usuarioActual}">Usuario</td>
               <td class="text-center">
                 <div class="btn-group-actions">
+                  
+                  
                   <!-- Ver detalles (todos los roles) -->
-                  <button class="btn btn-sm btn-info" data-bs-toggle="modal"
-                          th:attr="data-bs-target='#detalleModal__${d.id}'">
-                    <i class="bi bi-info-circle-fill"></i>
-                  </button>
+                 <a th:href="@{'/home/dispositivo/' + ${d.id}}" class="btn btn-sm btn-info">
+  <i class="bi bi-info-circle-fill"></i>
+</a>
 
                   <!-- Editar y Eliminar (solo ADMIN) -->
                   <sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -150,7 +156,8 @@
                       <i class="bi bi-pencil-fill"></i>
                     </a>
                     <a th:href="@{'/home/eliminar-dispositivo/' + ${d.id}}"
-                       class="btn btn-sm btn-danger">
+                       class="btn btn-sm btn-danger"
+                       onclick="return confirm('¿Estás seguro de que deseas eliminar este dispositivo? Esta acción no se puede deshacer.');">
                       <i class="bi bi-trash-fill"></i>
                     </a>
                   </sec:authorize>

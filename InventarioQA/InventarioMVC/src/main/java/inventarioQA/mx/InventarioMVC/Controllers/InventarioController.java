@@ -27,23 +27,55 @@ public class InventarioController {
     }
 
     @GetMapping("/devices")
-    public String verDispositivos(Model model) {
-        List<Device> dispositivos = deviceRepository.findAll();
-        model.addAttribute("dispositivos", dispositivos);
-        return "devices";
+public String verDispositivos(@RequestParam(value = "query", required = false) String query, Model model) {
+    List<Device> dispositivos;
+
+    if (query != null && !query.trim().isEmpty()) {
+        dispositivos = deviceRepository.findAll().stream()
+            .filter(d ->
+                (d.getProducto() != null && d.getProducto().toLowerCase().contains(query.toLowerCase())) ||
+                (d.getMarca() != null && d.getMarca().toLowerCase().contains(query.toLowerCase())) ||
+                (d.getModelo() != null && d.getModelo().toLowerCase().contains(query.toLowerCase())) ||
+                (d.getUsuarioActual() != null && d.getUsuarioActual().toLowerCase().contains(query.toLowerCase()))
+            )
+            .toList();
+    } else {
+        dispositivos = deviceRepository.findAll();
     }
 
-     @GetMapping("/dispositivos")
+    model.addAttribute("dispositivos", dispositivos);
+    model.addAttribute("totalDispositivos", dispositivos.size());
+
+    long asignados = dispositivos.stream()
+        .filter(d -> d.getUsuarioActual() != null && !d.getUsuarioActual().isBlank())
+        .count();
+
+    long disponibles = dispositivos.stream()
+        .filter(d -> d.getUsuarioActual() == null || d.getUsuarioActual().isBlank())
+        .count();
+
+    long bajoStock = dispositivos.stream()
+        .filter(d -> d.getDescripcion() != null &&
+                     d.getDescripcion().toLowerCase().contains("bajo stock"))
+        .count();
+
+    model.addAttribute("totalAsignados", asignados);
+    model.addAttribute("totalDisponibles", disponibles);
+    model.addAttribute("totalBajoStock", bajoStock);
+
+    return "devices";
+}
+
+    @GetMapping("/dispositivos")
     public String dipositivos() {
         return "dispositivos";
     }
 
-     @GetMapping("/miembros")
+    @GetMapping("/miembros")
     public String miembros() {
         return "miembros";
     }
 
-     
     @GetMapping("/nuevo-dispositivo")
     public String nuevoDispositivo(Model model) {
         model.addAttribute("device", new Device());
@@ -62,5 +94,17 @@ public class InventarioController {
         deviceRepository.save(device);
         return "redirect:/home/devices";
     }
-    
+
+    @GetMapping("/eliminar-dispositivo/{id}")
+    public String eliminarDispositivo(@PathVariable Long id) {
+        deviceRepository.deleteById(id);
+        return "redirect:/home/devices";
+    }
+
+    @GetMapping("/dispositivo/{id}")
+    public String verDetalleDispositivo(@PathVariable Long id, Model model) {
+    Device device = deviceRepository.findById(id).orElse(null);
+    model.addAttribute("device", device);
+    return "detalle-dispositivo";
+}
 }
