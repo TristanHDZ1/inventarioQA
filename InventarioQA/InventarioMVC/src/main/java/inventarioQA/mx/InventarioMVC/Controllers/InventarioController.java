@@ -27,44 +27,44 @@ public class InventarioController {
     }
 
     @GetMapping("/devices")
-public String verDispositivos(@RequestParam(value = "query", required = false) String query, Model model) {
-    List<Device> dispositivos;
+    public String verDispositivos(@RequestParam(value = "query", required = false) String query, Model model) {
+        List<Device> dispositivos;
 
-    if (query != null && !query.trim().isEmpty()) {
-        dispositivos = deviceRepository.findAll().stream()
-            .filter(d ->
-                (d.getProducto() != null && d.getProducto().toLowerCase().contains(query.toLowerCase())) ||
-                (d.getMarca() != null && d.getMarca().toLowerCase().contains(query.toLowerCase())) ||
-                (d.getModelo() != null && d.getModelo().toLowerCase().contains(query.toLowerCase())) ||
-                (d.getUsuarioActual() != null && d.getUsuarioActual().toLowerCase().contains(query.toLowerCase()))
-            )
-            .toList();
-    } else {
-        dispositivos = deviceRepository.findAll();
+        if (query != null && !query.trim().isEmpty()) {
+            dispositivos = deviceRepository.findAll().stream()
+                    .filter(d -> (d.getProducto() != null
+                            && d.getProducto().toLowerCase().contains(query.toLowerCase())) ||
+                            (d.getMarca() != null && d.getMarca().toLowerCase().contains(query.toLowerCase())) ||
+                            (d.getModelo() != null && d.getModelo().toLowerCase().contains(query.toLowerCase())) ||
+                            (d.getUsuarioActual() != null
+                                    && d.getUsuarioActual().toLowerCase().contains(query.toLowerCase())))
+                    .toList();
+        } else {
+            dispositivos = deviceRepository.findAll();
+        }
+
+        model.addAttribute("dispositivos", dispositivos);
+        model.addAttribute("totalDispositivos", dispositivos.size());
+
+        long asignados = dispositivos.stream()
+                .filter(d -> d.getUsuarioActual() != null && !d.getUsuarioActual().isBlank())
+                .count();
+
+        long disponibles = dispositivos.stream()
+                .filter(d -> d.getUsuarioActual() == null || d.getUsuarioActual().isBlank())
+                .count();
+
+        long bajoStock = dispositivos.stream()
+                .filter(d -> d.getDescripcion() != null &&
+                        d.getDescripcion().toLowerCase().contains("bajo stock"))
+                .count();
+
+        model.addAttribute("totalAsignados", asignados);
+        model.addAttribute("totalDisponibles", disponibles);
+        model.addAttribute("totalBajoStock", bajoStock);
+
+        return "devices";
     }
-
-    model.addAttribute("dispositivos", dispositivos);
-    model.addAttribute("totalDispositivos", dispositivos.size());
-
-    long asignados = dispositivos.stream()
-        .filter(d -> d.getUsuarioActual() != null && !d.getUsuarioActual().isBlank())
-        .count();
-
-    long disponibles = dispositivos.stream()
-        .filter(d -> d.getUsuarioActual() == null || d.getUsuarioActual().isBlank())
-        .count();
-
-    long bajoStock = dispositivos.stream()
-        .filter(d -> d.getDescripcion() != null &&
-                     d.getDescripcion().toLowerCase().contains("bajo stock"))
-        .count();
-
-    model.addAttribute("totalAsignados", asignados);
-    model.addAttribute("totalDisponibles", disponibles);
-    model.addAttribute("totalBajoStock", bajoStock);
-
-    return "devices";
-}
 
     @GetMapping("/dispositivos")
     public String dipositivos() {
@@ -103,8 +103,61 @@ public String verDispositivos(@RequestParam(value = "query", required = false) S
 
     @GetMapping("/dispositivo/{id}")
     public String verDetalleDispositivo(@PathVariable Long id, Model model) {
-    Device device = deviceRepository.findById(id).orElse(null);
-    model.addAttribute("device", device);
-    return "detalle-dispositivo";
+        Device device = deviceRepository.findById(id).orElse(null);
+        model.addAttribute("device", device);
+        return "detalle-dispositivo";
+    }
+
+@GetMapping("/dispositivos/base")
+public String mostrarDispositivosPorCategoria(@RequestParam(value = "categoria", required = false) String categoria, Model model) {
+    List<Device> dispositivos;
+
+    if (categoria != null && !categoria.trim().isEmpty()) {
+        String categoriaLower = categoria.toLowerCase();
+
+        if (categoriaLower.equals("android")) {
+            dispositivos = deviceRepository.findAll().stream()
+                .filter(d -> d.getMarca() != null && (
+                        d.getMarca().equalsIgnoreCase("Motorola") ||
+                        d.getMarca().equalsIgnoreCase("Xiaomi") ||
+                        d.getMarca().equalsIgnoreCase("Huawei") ||
+                        d.getMarca().equalsIgnoreCase("Samsung") ||
+                        d.getMarca().equalsIgnoreCase("LG") ||
+                        d.getMarca().equalsIgnoreCase("ZTE") ||
+                        d.getMarca().equalsIgnoreCase("Nokia") ||
+                        d.getMarca().equalsIgnoreCase("OnePlus") ||
+                        d.getMarca().equalsIgnoreCase("Nothing") ||
+                        d.getMarca().equalsIgnoreCase("Lanix")
+                ) && d.getProducto() != null && !d.getProducto().equalsIgnoreCase("Monitor"))
+                .toList();
+
+        } else if (categoriaLower.equals("ios") || categoriaLower.equals("iphone")) {
+            dispositivos = deviceRepository.findAll().stream()
+                .filter(d -> d.getMarca() != null &&
+                             d.getMarca().equalsIgnoreCase("Apple") &&
+                             d.getProducto() != null &&
+                             !d.getProducto().equalsIgnoreCase("iPad") &&
+                             !d.getProducto().equalsIgnoreCase("MacBook") &&
+                             !d.getProducto().equalsIgnoreCase("Macbook"))
+                .toList();
+
+        } else {
+            dispositivos = deviceRepository.findAll().stream()
+                .filter(d -> d.getProducto() != null &&
+                             d.getProducto().equalsIgnoreCase(categoria))
+                .toList();
+        }
+    } else {
+        dispositivos = deviceRepository.findAll();
+    }
+
+    model.addAttribute("categoriaSeleccionada", categoria);
+    model.addAttribute("dispositivos", dispositivos);
+    model.addAttribute("totalDispositivos", dispositivos.size());
+
+    return "base";
 }
+
+
+
 }
