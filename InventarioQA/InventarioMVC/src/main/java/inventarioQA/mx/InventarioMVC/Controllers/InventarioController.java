@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import java.text.Normalizer;
+import java.util.Arrays;
 
 import java.util.List;
 
@@ -157,6 +159,34 @@ public String mostrarDispositivosPorCategoria(@RequestParam(value = "categoria",
 
     return "base";
 }
+
+@GetMapping("/dispositivos/usuario")
+public String mostrarDispositivosPorUsuario(@RequestParam("usuario") String usuario, Model model) {
+    String[] palabrasClave = normalizar(usuario).split("\\s+");
+
+    List<Device> dispositivos = deviceRepository.findAll().stream()
+        .filter(d -> {
+            String nombreUsuario = normalizar(d.getUsuarioActual());
+            return Arrays.stream(palabrasClave).allMatch(nombreUsuario::contains);
+        })
+        .toList();
+
+    model.addAttribute("categoriaSeleccionada", usuario);
+    model.addAttribute("dispositivos", dispositivos);
+    model.addAttribute("totalDispositivos", dispositivos.size());
+
+    return "base";
+}
+
+// Normaliza: quita tildes, convierte a minúsculas, y recorta espacios
+private String normalizar(String texto) {
+    if (texto == null) return "";
+    return Normalizer.normalize(texto, Normalizer.Form.NFD)
+                     .replaceAll("\\p{InCombiningDiacriticalMarks}+", "")
+                     .toLowerCase()
+                     .trim();
+}
+
 
 
 
