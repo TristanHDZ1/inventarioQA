@@ -22,11 +22,17 @@ public class InventarioController {
     public String Principal() {
         return "Principal";
     }
+      @GetMapping("/Pruebas/")
+    public String Pruebas() {
+        return "Pruebas";
+    }
 
     @GetMapping("/Login/")
     public String mostrarLogin() {
         return "Login";
     }
+
+   
 
     @GetMapping("/devices")
     public String verDispositivos(@RequestParam(value = "query", required = false) String query, Model model) {

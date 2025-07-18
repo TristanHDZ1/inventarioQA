@@ -16,21 +16,24 @@
 
   <!-- Enlace al CSS externo -->
   <link rel="stylesheet" th:href="@{/css/index.css}">
+ 
 
 
 
-<!-- Narvar-->
-
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-verde shadow-sm py-3">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="https://www.gruposalinas.com/es/empresas/dicio">
-      <img src="https://dicio.com/img/dicio_logo.png" alt="QA Icon" width="100" height="25" class="me-2">
-  
+      
+      <img src="/images/Logo.png" alt="QA Icon" width="110" height="35" class="me-2 rounded-pill">
+     
     </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav gap-3">
         <li class="nav-item">
@@ -38,21 +41,35 @@
             <i class="bi bi-house-door-fill me-1"></i> Inicio
           </a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="https://eliiot-team.monday.com/boards/9271575141" target="_blank">
+            <i class="bi bi-kanban me-1"></i> Monday
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="/home/Pruebas/">
+            <i class="bi bi-gear-wide-connected me-1"></i> Pruebas Automatizadas
+          </a>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center" href="#contacto">
             <i class="bi bi-envelope-fill me-1"></i> Contacto
           </a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link d-flex align-items-center" href="/home/Login/">
             <i class="bi bi-box-arrow-in-right me-1"></i> Login
           </a>
         </li>
       </ul>
+      <img src="/images/LogoQA.png" alt="QA Icon" width="50" height="50" class="me-2 rounded-pill">
     </div>
   </div>
 </nav>
-
 
 <!-- INICIO -->
 <section class="hero-modern">
@@ -60,7 +77,7 @@
     <h1>Bienvenidos<span class="highlight"> a nuestro espacio</span></h1>
     <p>Donde la calidad del software comienza con pruebas inteligentes y compromiso total...</p>
     <div class="row">
-      <a href="#contacto" class="btn-hero">Apply now</a>
+      <a href="#contacto" class="btn-hero">Aplica ahora...</a>
     </div>
   </div>
 
@@ -73,42 +90,26 @@
 
 
 
-<!-- VALORES -->
-<section id="valores" class="container">
-  <h2 class="text-center" data-aos="fade-up">Nuestro equipo cuenta</h2>
-  <div class="row">
-    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in">
-      <div class="valor text-center">
-        <img src="https://img.icons8.com/?size=96&id=ScJCfhkd77yD&format=png" alt="Precisión" style="width:80px; margin-bottom: 10px;">
-        <h5>Precisión</h5>
-        <p>Analizamos hasta el último detalle para garantizar calidad impecable.</p>
-      </div>
-    </div>
-    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
-      <div class="valor text-center">
-        <img src="https://img.icons8.com/?size=96&id=syJFmi5G3Eeb&format=png" alt="Compromiso" style="width:80px; margin-bottom: 10px;">
-        <h5>Compromiso</h5>
-        <p>Estamos presentes desde la planeación hasta el deploy final.</p>
-      </div>
-    </div>
-    <div class="col-12 col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
-      <div class="valor text-center">
-        <img src="https://img.icons8.com/?size=96&id=CM6gGHrI7fs3&format=png" alt="Trabajo en equipo" style="width:80px; margin-bottom: 10px;">
-        <h5>Trabajo en equipo</h5>
-        <p>Colaboramos, aprendemos juntos y crecemos como uno solo.</p>
-      </div>
-    </div>
+
+<!-- ========== SECCIÓN VALORES ========== -->
+ <section class="hero-modern">
+  <div class="hero-content">
+<div class="valores-container">
+  <div class="gif-lateral" data-aos="zoom-in-left" data-aos-delay="0">
+    <img src="https://voyager.postman.com/gif/postman-demo-for-engineering-leaders-workflow-recut-v1.gif" alt="GIF de equipo" />
+  </div>
+</div>
   </div>
 </section>
 
 
-
-<!-- EQUIPO -->
-<section class="container">
-  <div class="row valign-wrapper" data-aos="fade-right">
-    <div class="col s12 m6">
-      <div class="card-panel teal lighten-5 z-depth-3">
-        <h5 class="teal-text text-darken-4">Nuestra Historia</h5>
+<!-- EQUIPO CON ESTILO MODERNO -->
+<section class="container equipo-section py-5">
+  <!-- Historia -->
+  <div class="row align-items-center mb-5" data-aos="fade-right">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="card-custom animate-float">
+        <h3 class="titulo-seccion">Nuestra Historia</h3>
         <p class="texto-justificado">
           Somos un equipo unido por la pasión por la calidad. Desde nuestros inicios, hemos trabajado con compromiso,
           curiosidad y mejora constante. Cada miembro aporta una visión única que fortalece el proceso y eleva el producto.
@@ -116,24 +117,18 @@
         </p>
       </div>
     </div>
-    <div class="col s12 m6 center-align">
+    <div class="col-md-6 text-center">
       <img src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
-           alt="Historia QA"
-           class="responsive-img imagen-equipo"
-           data-aos="zoom-in" />
+           class="img-fluid equipo-img hover-zoom"
+           alt="Historia QA" />
     </div>
   </div>
 
-  <div class="row valign-wrapper" data-aos="fade-left">
-    <div class="col s12 m6 center-align">
-      <img src="https://uploads.toptal.io/blog/image/124643/toptal-blog-image-1510215092658-4d04a3782aaced4a643c9477b9790e0c.gif"
-           alt="Misión QA"
-           class="responsive-img imagen-equipo"
-           data-aos="zoom-in" />
-    </div>
-    <div class="col s12 m6">
-      <div class="card-panel teal lighten-5 z-depth-3">
-        <h5 class="teal-text text-darken-4">Nuestra Misión</h5>
+  <!-- Misión -->
+  <div class="row align-items-center flex-md-row-reverse" data-aos="fade-left">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="card-custom animate-float">
+        <h3 class="titulo-seccion">Nuestra Misión</h3>
         <p class="texto-justificado">
           Garantizar que cada línea de código entregue valor real. Nos enfocamos en identificar fallos antes de que
           lleguen al usuario final, anticipándonos a los problemas y asegurando una experiencia fluida, confiable y sin
@@ -141,23 +136,83 @@
         </p>
       </div>
     </div>
+    <div class="col-md-6 text-center">
+      <img src="https://uploads.toptal.io/blog/image/124643/toptal-blog-image-1510215092658-4d04a3782aaced4a643c9477b9790e0c.gif"
+           class="img-fluid equipo-img hover-zoom"
+           alt="Misión QA" />
+    </div>
   </div>
 </section>
 
-<!-- BARRA DE TECNOLOGÍAS -->
 <section id="herramientas" class="tech-bar-container" aria-label="Tecnologías y herramientas usadas">
-  <div class="tech-bar" aria-hidden="true">
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
-    <div class="tech-item"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" /><span>Postman</span></div>
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" /><span>Spring</span></div>
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></div>
-    <div class="tech-item"><img src="https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/jmeter.png" alt="JMeter" /><span>JMeter</span></div>
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>GitHub</span></div>
-    <div class="tech-item"><img src="https://docs.usebruno.com/bruno.png" alt="Bruno" /><span>Bruno</span></div>
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" /><span>FastAPI</span></div>
-    <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>Java</span></div>
+  <div class="tech-bar-wrapper">
+    <div class="tech-bar">
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="tech-item"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" /><span>Postman</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring" /><span>Spring</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></div>
+      <div class="tech-item"><img src="https://raw.githubusercontent.com/apache/jmeter/master/xdocs/images/jmeter.png" alt="JMeter" /><span>JMeter</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /><span>GitHub</span></div>
+      <div class="tech-item"><img src="https://docs.usebruno.com/bruno.png" alt="Bruno" /><span>Bruno</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" /><span>FastAPI</span></div>
+      <div class="tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>Java</span></div>
+    </div>
   </div>
 </section>
+
+<section id="logros-qa" class="fade-in-scale">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: var(--white); font-size: 2.8rem; font-weight: 800;">
+      Logros del equipo QA
+    </h2>
+
+    <div class="timeline">
+      <!-- Logro 1 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="https://www.ifs.com.mx/newimg/ubicacion.gif" alt="Icono 1" />
+        </div>
+        <div class="timeline-content">
+          <h5>Cobertura del 98%</h5>
+          <p>Logramos una cobertura de pruebas automatizadas del 98% en módulos críticos.</p>
+        </div>
+      </div>
+
+      <!-- Logro 2 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="https://cdn-icons-gif.flaticon.com/12035/12035166.gif" alt="Icono 2" />
+        </div>
+        <div class="timeline-content">
+          <h5>Automatización CI/CD</h5>
+          <p>Integración de pruebas QA en pipelines usando Postman, JMeter, Swagger y FastAPI.</p>
+        </div>
+      </div>
+
+      <!-- Logro 3 -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="https://cdn-icons-gif.flaticon.com/9671/9671222.gif" alt="Icono 3" />
+        </div>
+        <div class="timeline-content">
+          <h5>Reducción de Bugs</h5>
+          <p>Disminución del 65% en errores en producción gracias a mejoras QA continuas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LLAMADO A LA ACCIÓN FINAL CON PARALLAX -->
+<section id="cta-final" class="cta-final parallax-bg text-center text-white d-flex align-items-center justify-content-center" data-aos="zoom-in">
+  <div class="container py-5">
+    <h2 class="display-5 fw-bold mb-3">¿Listo para llevar tu calidad de software al siguiente nivel?</h2>
+    <p class="lead mb-4">Contáctanos hoy y recibe una auditoría gratuita de tus procesos de testing.</p>
+    <a href="#contacto" class="btn-custom mt-2">Solicitar auditoría</a>
+  </div>
+</section>
+
+
 
 <!-- TESTIMONIOS -->
 <section id="testimonios" class="container py-5" data-aos="fade-up">
@@ -207,76 +262,125 @@
       </div>
     </div>
 
+    <div class="col-md-3 testimonial-card" data-aos="flip-left" data-aos-delay="200">
+      <div class="testimonial-inner">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEASbmVcn7o3w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1680319311442?e=2147483647&v=beta&t=ugG7rCzmFrf--6c1kj0iy7Ae2jIYZ3GFZgXNcg31kRE"
+             alt="Logo Empresa"
+             class="testimonial-logo mb-3">
+        <p class="testimonial-text">
+          Su nivel de detalle es impresionante. Recomiendo su servicio 100%.
+        </p>
+        <h6 class="testimonial-author">
+          — Israel Cruz
+        </h6>
+      </div>
+    </div>
+
+    <div class="col-md-3 testimonial-card" data-aos="flip-left" data-aos-delay="200">
+      <div class="testimonial-inner">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStVVO3wHt-YwKZ3qNKjX47HvVfTJGYwGTuIA&s"
+             alt="Logo Empresa"
+             class="testimonial-logo mb-3">
+        <p class="testimonial-text">
+          Su nivel de detalle es impresionante. Recomiendo su servicio 100%.
+        </p>
+        <h6 class="testimonial-author">
+          — Miguel Angel 
+        </h6>
+      </div>
+    </div>
+
   </div>
 </section>
 
-  <!-- PREGUNTAS FRECUENTES -->
-<section id="faq"
-         class="container py-5 faq-section"
-         data-aos="fade-up">
+ <!-- PREGUNTAS FRECUENTES -->
+<section id="faq" class="container py-5 faq-section" data-aos="fade-up">
   <h2 class="text-center mb-4 faq-title">Preguntas frecuentes</h2>
   <div class="accordion" id="faqAccordion">
+
     <div class="accordion-item">
       <h2 class="accordion-header" id="faqOne">
-        <button class="accordion-button" 
-                type="button"
-                data-bs-toggle="collapse" 
-                data-bs-target="#collapseOne">
-          ¿Cómo solicito una cotización?
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          ¿Cómo reportan los bugs encontrados?
         </button>
       </h2>
-      <div id="collapseOne" 
-           class="accordion-collapse collapse show" 
-           data-bs-parent="#faqAccordion">
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
         <div class="accordion-body">
-          Completa el formulario de contacto o envíanos un correo a 
-          <a href="mailto:equipoQA@gmail.com" 
-             class="text-decoration-none highlight-link">
-            equipoQA@gmail.com
-          </a>.
+          Documentamos cada bug con evidencia (screenshots o video), pasos para reproducirlo, severidad, entorno y comportamiento esperado vs actual. Usamos herramientas como Jira, Trello o Notion.
         </div>
       </div>
     </div>
 
     <div class="accordion-item">
       <h2 class="accordion-header" id="faqTwo">
-        <button class="accordion-button collapsed" 
-                type="button"
-                data-bs-toggle="collapse" 
-                data-bs-target="#collapseTwo">
-          ¿Trabajan con metodologías ágiles?
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          ¿Qué herramientas de pruebas automatizadas utilizan?
         </button>
       </h2>
-      <div id="collapseTwo" 
-           class="accordion-collapse collapse" 
-           data-bs-parent="#faqAccordion">
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
         <div class="accordion-body">
-          Sí, nos integramos perfectamente en scrums, sprints y pipelines de CI/CD para un flujo continuo.
+          Trabajamos con Postman, JMeter, Selenium, Cypress, Playwright y frameworks de pruebas como PyTest o Robot Framework. También integramos con CI/CD (Jenkins, GitHub Actions, GitLab CI).
         </div>
       </div>
     </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          ¿Qué tipo de pruebas realizan?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Realizamos pruebas funcionales, de regresión, smoke, exploratorias, automatizadas, de carga y seguridad. Adaptamos el tipo de pruebas según el ciclo de vida del software.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+          ¿Cómo aseguran la calidad en proyectos ágiles?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Participamos desde la planificación, escribimos criterios de aceptación con el equipo, y automatizamos pruebas desde el día uno. Hacemos validaciones continuas en cada sprint y colaboramos con DevOps.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faqFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+          ¿Ofrecen soporte después de la entrega?
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, brindamos soporte post-entrega para validar hotfixes, parches urgentes o nuevas funcionalidades críticas. Nuestro objetivo es asegurar que la calidad se mantenga en producción.
+        </div>
+      </div>
+    </div>
+
     
+
   </div>
 </section>
 
-  <!-- LLAMADO A LA ACCIÓN FINAL -->
-  <section id="cta-final" class="cta-final" data-aos="zoom-in">
-    <div class="container">
-      <h2>¿Listo para llevar tu calidad de software al siguiente nivel?</h2>
-      <p>Contáctanos hoy y recibe una auditoría gratuita de tus procesos de testing.</p>
-      <a href="#contacto" class="btn-custom mt-3">Solicitar auditoría</a>
-    </div>
-  </section>
+
+
+  
 
 
 <!-- VIDEO YOUTUBE -->
 <section class="video-section" data-aos="zoom-in" style="padding: 2rem;">
-  <h2 style="text-align: center;">Video de presentación</h2>
-  <p style="text-align: center;">Conoce más sobre nuestro equipo y metodología de trabajo:</p>
+  <h2 style="text-align: center;">Conoce más sobre nuestro equipo</h2>
+ 
   <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 2rem; margin-top: 2rem;">
 
     <!-- Video -->
-    <div style="flex: 1 1 300px; max-width: 400px;">
+    <div style="flex: 1 1 300px; max-width: 700px;">
       <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
         <iframe src="https://www.youtube.com/embed/HxPO7iwvsvc" title="Video de presentación"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -375,6 +479,8 @@
         <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width: 28px;">
       </a>
     </div>
+
+    
     
     <!-- Texto de derechos -->
     <p class="mb-0">© 2025 Equipo QA - Todos los derechos reservados</p>

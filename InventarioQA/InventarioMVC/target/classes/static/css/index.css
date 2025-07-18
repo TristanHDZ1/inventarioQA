@@ -3,22 +3,22 @@
    ======================= */
 
 :root {
-  /* Paleta azul armonizada */
-  --primary-color:   #1E3A8A;  /* Azul oscuro fuerte */
-  --secondary-color: #2563EB;  /* Azul medio */
-  --accent-color:    #93C5FD;  /* Azul claro */
-  --background-dark: #0F172A;  /* Casi negro con matiz azul */
-  --background-gradient: linear-gradient(135deg, #0F172A, #1E40AF);
-  --card-gradient:   linear-gradient(145deg, #1E3A8A, #2563EB);
-  --white:           #ffffff;
-  --light-gray:      #cbd5e1;  /* Gris muy suave con toque frío */
-  --text-light:      #E0F2FE;  /* Texto casi blanco con tinte azul */
-  --hover-gradient:  linear-gradient(90deg, #3B82F6, #60A5FA, #93C5FD);
+  /* Paleta azul oscura y elegante */
+  --primary-color:   #0B1E52;  /* Azul muy oscuro profundo */
+  --secondary-color: #183F75;  /* Azul medio más apagado */
+  --accent-color:    #3C70B5;  /* Azul claro más tenue */
+  --background-dark: #0A0F1C;  /* Negro azulado muy oscuro */
+  --background-gradient: linear-gradient(135deg, #0A0F1C, #112D5C);
+  --card-gradient:   linear-gradient(145deg, #0B1E52, #183F75);
+  --white:           #e4eaf1;  /* Blanco suave (ligeramente azulado) */
+  --light-gray:      #6b7280;  /* Gris frío medio */
+  --text-light:      #BFD9F2;  /* Azul hielo pálido para texto claro */
+  --hover-gradient:  linear-gradient(90deg, #204A87, #3C70B5, #6C9FEF);
 }
 /* ======== GENERALES ======== */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--background-gradient);
   color: var(--text-light);
   scroll-behavior: smooth;
@@ -28,6 +28,66 @@ body {
   margin: 0;
   padding-top: 70px;
   line-height: 1.6;
+}
+
+
+.valores-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.gif-lateral {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-left: 40px; /* Desplaza el GIF hacia la derecha */
+}
+
+.gif-lateral img {
+  width: 150%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.gif-lateral img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .valores-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gif-lateral {
+    justify-content: center;
+    padding-left: 0;
+    margin-left: 0;  /* Resetea margin en móvil */
+    margin-top: 40px;
+  }
+
+  .gif-lateral img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .texto-valores {
+    text-align: center;
+    padding: 20px 10px;
+  }
 }
 
 /* ======== HEADER ======== */
@@ -179,25 +239,31 @@ footer {
   color: var(--accent-color) !important;
 }
 
-/* ======== BARRA DE TECNOLOGÍAS ======== */
+/* ======== BARRA DE TECNOLOGÍAS - MEJORADA ======== */
 
 .tech-bar-container {
   overflow: hidden;
   background: var(--card-gradient);
-  border-radius: 20px;
-  margin: 40px auto;
-  max-width: 90vw;
-  box-shadow: 0 0 25px rgba(42, 42, 90, 0.5);
-  padding: 15px 0;
+  border-radius: 24px;
+  margin: 60px auto;
+  max-width: 95vw;
+  box-shadow: 0 0 35px rgba(42, 42, 90, 0.6);
+  padding: 30px 10px;
+}
+
+.tech-bar-wrapper {
+  display: flex;
+  overflow: hidden;
+  position: relative;
 }
 
 .tech-bar {
   display: flex;
-  width: max-content;
-  animation: scrollLeft 20s linear infinite;
+  gap: 60px;
+  animation: scrollLeft 25s linear infinite;
   align-items: center;
-  gap: 30px;
-  transform: translateX(100%);
+  width: max-content;
+  padding: 10px 0;
   user-select: none;
 }
 
@@ -205,17 +271,23 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 90px;
+  min-width: 120px;
   color: var(--accent-color);
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
 .tech-item img {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: scale(1.15);
 }
 
 @keyframes scrollLeft {
@@ -225,16 +297,24 @@ footer {
   100% {
     transform: translateX(-100%);
   }
-
-  
 }
 
-/* Además un pequeño efecto hover en cada icono */
-.tech-item:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
+/* Responsive: en pantallas grandes, duplica la barra para hacerlo más intenso */
+@media screen and (min-width: 992px) {
+  .tech-bar {
+    gap: 80px;
+    animation-duration: 18s;
+  }
 
+  .tech-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .tech-item {
+    font-size: 1.2rem;
+  }
+}
 /* ===== HERO MODERN ===== */
 .hero-modern {
   display: flex;
@@ -698,3 +778,130 @@ footer {
 .testimonial-logo:hover {
   transform: scale(1.1);
 }
+
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 30px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: var(--background-dark);
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.timeline-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.timeline-content {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  color: var(--text-light);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  background: var(--hover-gradient);
+  color: var(--white);
+}
+
+/* --- Sección CTA Final con efecto parallax --- */
+.cta-final.parallax-bg {
+  background-image: url('https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMHBhbnRhbGxhJTIwZGUlMjB0ZWNub2xvZyVDMyVBRGF8ZW58MHx8MHx8fDA%3D'); /* Puedes cambiar esta imagen */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  color: white;
+  position: relative;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .cta-final.parallax-bg {
+    background-attachment: scroll; /* Mejora compatibilidad en móviles */
+    min-height: 60vh;
+  }
+}
+
+
+
+/* Animaciones */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.equipo-section {
+  background: linear-gradient(145deg, #0b1e52 0%, #183f75 100%);
+  border-radius: 20px;
+  padding: 60px 30px;
+  color: #fff;
+}
+
+.card-custom {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}
+
+.hover-zoom {
+  transition: transform 0.5s ease;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.titulo-seccion {
+  font-size: 1.8rem;
+  color: #93c5fd;
+  margin-bottom: 15px;
+}
+
+.texto-justificado {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
