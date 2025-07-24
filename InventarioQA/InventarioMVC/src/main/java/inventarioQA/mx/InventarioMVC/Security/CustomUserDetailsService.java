@@ -23,16 +23,16 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println("🔥 Autenticando usuario: " + username);
+        System.out.println(" Autenticando usuario: " + username);
 
         User user = userRepository.findByUsername(username);
         if (user == null) {
-            System.out.println("⚠️ Usuario NO encontrado en la base de datos.");
+            System.out.println(" Usuario NO encontrado en la base de datos.");
             throw new UsernameNotFoundException("Usuario no encontrado: " + username);
         }
 
-        System.out.println("✅ Usuario encontrado: " + user.getUsername());
-        System.out.println("🎯 Roles encontrados: " + user.getRoles());
+        System.out.println(" Usuario encontrado: " + user.getUsername());
+        System.out.println(" Roles encontrados: " + user.getRoles());
 
         return new org.springframework.security.core.userdetails.User(
                 user.getUsername(),
@@ -44,7 +44,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Set<Role> roles) {
         return roles.stream()
             .map(role -> {
-                System.out.println("🔐 Rol: " + role.getName()); // muestra cada rol
+                System.out.println(" Rol: " + role.getName()); // muestra cada rol
                 return new SimpleGrantedAuthority("ROLE_" + role.getName().toUpperCase());
             })
             .collect(Collectors.toList());

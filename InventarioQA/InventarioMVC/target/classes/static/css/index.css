@@ -30,32 +30,31 @@ body {
   line-height: 1.6;
 }
 
-
+.hero-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
 .valores-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 40px;
-  padding: 40px 0;
+  padding: 60px 5%;
 }
 
 .gif-lateral {
-  flex: 1 1 300px;
+  flex: 1 1 45%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 0;
-  margin-left: 40px; /* Desplaza el GIF hacia la derecha */
+  justify-content: center;
 }
 
+
 .gif-lateral img {
-  width: 150%;
-  max-width: 700px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -63,31 +62,36 @@ body {
   transform: scale(1.05);
 }
 
-@media (max-width: 992px) {
-  .valores-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .gif-lateral {
-    justify-content: center;
-    padding-left: 0;
-    margin-left: 0;  /* Resetea margin en móvil */
-    margin-top: 40px;
-  }
-
-  .gif-lateral img {
-    width: 100%;
-    max-width: 100%;
-  }
+.intro-text {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-light);
+  padding: 20px;
+  max-width: 600px;
 }
 
+.intro-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
 
-@media (max-width: 992px) {
-  .texto-valores {
-    text-align: center;
-    padding: 20px 10px;
-  }
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.intro-text {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-light);
+  padding: 25px 30px;
+  max-width: 600px;
+
+  background-color: rgba(3, 15, 50, 0.8);  /* Fondo azul semitransparente */
+  border: 2px solid var(--accent-color);    /* Borde con color accent */
+  border-radius: 12px;                       /* Esquinas redondeadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);/* Sombra para profundidad */
 }
 
 /* ======== HEADER ======== */
@@ -645,7 +649,7 @@ footer {
   border-radius: 20px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
-  padding: 30px 20px;
+  padding: 50px 20px;
 }
 
 .testimonial-card:hover {

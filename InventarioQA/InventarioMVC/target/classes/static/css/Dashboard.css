@@ -1,14 +1,15 @@
 :root {
-  --primary-color:   #1E3A8A;
-  --secondary-color: #2563EB;
-  --accent-color:    #93C5FD;
-  --background-dark: #0F172A;
-  --background-gradient: linear-gradient(135deg, #0F172A, #1E40AF);
-  --card-gradient:   linear-gradient(145deg, #1E3A8A, #2563EB);
-  --white:           #ffffff;
-  --light-gray:      #cbd5e1;
-  --text-light:      #E0F2FE;
-  --hover-gradient:  linear-gradient(90deg, #3B82F6, #60A5FA, #93C5FD);
+  /* Paleta azul oscura y elegante */
+  --primary-color:   #0B1E52;  /* Azul muy oscuro profundo */
+  --secondary-color: #183F75;  /* Azul medio más apagado */
+  --accent-color:    #3C70B5;  /* Azul claro más tenue */
+  --background-dark: #0A0F1C;  /* Negro azulado muy oscuro */
+  --background-gradient: linear-gradient(135deg, #0A0F1C, #112D5C);
+  --card-gradient:   linear-gradient(145deg, #0B1E52, #183F75);
+  --white:           #e4eaf1;  /* Blanco suave (ligeramente azulado) */
+  --light-gray:      #6b7280;  /* Gris frío medio */
+  --text-light:      #BFD9F2;  /* Azul hielo pálido para texto claro */
+  --hover-gradient:  linear-gradient(90deg, #204A87, #3C70B5, #6C9FEF);
 }
 
 body {

@@ -11,46 +11,89 @@
   <link rel="stylesheet" href="/css/dashboard.css">
 
   <style>
+    :root {
+      --primary-color: #0B1E52;
+      --secondary-color: #183F75;
+      --accent-color: #3C70B5;
+      --hover-gradient: linear-gradient(45deg, #3C70B5, #4e91df);
+      --text-light: #f5f5f5;
+      --background-dark: #0F172A;
+      --white: #ffffff;
+      --card-gradient: linear-gradient(145deg, rgba(24, 63, 117, 0.85), rgba(11, 30, 82, 0.85));
+      --glass-blur: blur(10px);
+    }
+
+    body {
+      background: var(--background-dark);
+      color: var(--text-light);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
     .formulario-edicion {
       background: var(--card-gradient);
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-      max-width: 850px;
-      margin: 0 auto;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      padding: 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      max-width: 880px;
+      margin: 3rem auto;
+      transition: all 0.4s ease;
     }
+
     .formulario-edicion h2 {
       text-align: center;
       margin-bottom: 2rem;
-      font-weight: bold;
+      font-weight: 700;
+      font-size: 1.8rem;
       color: var(--accent-color);
     }
+
     label {
-      color: var(--light-gray);
+      color: var(--text-light);
       font-weight: 600;
+      margin-bottom: 0.5rem;
     }
+
+    .form-control {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--white);
+      border-radius: 0.5rem;
+      transition: 0.3s ease;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 0.15rem rgba(60, 112, 181, 0.4);
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--white);
+    }
+
     .btn-guardar {
       background: var(--accent-color);
-      color: var(--primary-color);
+      color: var(--white);
       font-weight: bold;
       border: none;
+      border-radius: 0.5rem;
+      transition: 0.3s ease;
     }
+
     .btn-guardar:hover {
       background: var(--hover-gradient);
       color: var(--white);
     }
+
     .btn-cancelar {
       background: #6c757d;
       color: white;
       font-weight: bold;
       border: none;
+      border-radius: 0.5rem;
     }
+
     .btn-cancelar:hover {
       background: #5a6268;
-    }
-    body {
-      background: var(--background-dark);
-      color: var(--text-light);
     }
   </style>
 </head>
@@ -65,42 +108,41 @@
         <div class="row mb-3">
           <div class="col-md-6">
             <label># Placa de Activo Fijo</label>
-            <input type="text" class="form-control" th:field="*{numeroPlacaActivoFijo}" />
+            <input type="text" class="form-control" th:field="*{numeroPlacaActivoFijo}" required />
           </div>
           <div class="col-md-6">
             <label>Producto</label>
-            <input type="text" class="form-control" th:field="*{producto}" />
+            <input type="text" class="form-control" th:field="*{producto}" required />
           </div>
         </div>
 
         <div class="row mb-3">
           <div class="col-md-6">
             <label>Marca</label>
-            <input type="text" class="form-control" th:field="*{marca}" />
+            <input type="text" class="form-control" th:field="*{marca}" required />
           </div>
           <div class="col-md-6">
             <label>Modelo</label>
-            <input type="text" class="form-control" th:field="*{modelo}" />
+            <input type="text" class="form-control" th:field="*{modelo}" required />
           </div>
         </div>
 
         <div class="row mb-3">
           <div class="col-md-6">
             <label>Usuario Actual</label>
-            <input type="text" class="form-control" th:field="*{usuarioActual}" />
+            <input type="text" class="form-control" th:field="*{usuarioActual}" required />
           </div>
           <div class="col-md-6">
             <label>IMEI</label>
-            <input type="text" class="form-control" th:field="*{imei}" />
+            <input type="text" class="form-control" th:field="*{imei}" required />
           </div>
         </div>
 
         <div class="mb-3">
           <label>Descripción</label>
-          <textarea class="form-control" th:field="*{descripcion}" rows="3"></textarea>
+          <textarea class="form-control" th:field="*{descripcion}" rows="3" required></textarea>
         </div>
 
-        <!-- Botones -->
         <div class="text-center mt-4">
           <button type="submit" class="btn btn-guardar px-4 me-2">
             <i class="bi bi-save me-2"></i>Guardar Cambios
