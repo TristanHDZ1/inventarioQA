@@ -53,18 +53,72 @@ body {
   font-weight: bold;
 }
 
-/* Tabla */
+/* ============================= */
+/* ESTILO MEJORADO PARA LA TABLA */
+/* ============================= */
+
 .card-table {
-  background: var(--card-gradient);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  background: rgba(255, 255, 255, 0.02); /* más sutil */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
-.table-dark {
-  background: transparent;
+
+.card-table:hover {
+  transform: scale(1.01);
 }
-.table-hover tbody tr:hover {
-  background: rgba(255,255,255,0.1);
+
+.table-dark th {
+  background-color: rgba(28, 31, 46, 0.9);
+  color: var(--white);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.table-dark td {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  vertical-align: middle;
+}
+
+.table-dark tbody tr {
+  transition: background 0.2s;
+}
+
+.table-dark tbody tr:hover {
+  background: rgba(60, 112, 181, 0.15); /* azul translúcido */
+}
+
+.btn-group-actions .btn {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  min-width: 32px;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
+}
+
+.table-responsive {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 0.75rem;
+  scrollbar-width: thin;
+}
+
+/* Estilo visual del scrollbar */
+.table-responsive::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
 }
 
 /* Botones */
@@ -140,3 +194,138 @@ header {
   margin-left: 4px;
 }
 
+.sidebar {
+  width: 240px; /* Más ancho */
+  min-height: 100vh;
+  background: var(--primary-color);
+  font-size: 1.05rem; /* Letras más grandes */
+}
+
+.sidebar-logo {
+  width: 180px;
+  height: auto;
+  align-self: start;
+  margin-left: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.sidebar .nav-link {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background: var(--secondary-color);
+  border-radius: 6px;
+}
+
+.sidebar .nav-item {
+  margin-bottom: 0.75rem;
+}
+
+/* ====== Animaciones Suaves y Transiciones ====== */
+* {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+/* Animación de entrada para cards métricas */
+.card-metric {
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+}
+.card-metric:nth-child(1) { animation-delay: 0.1s; }
+.card-metric:nth-child(2) { animation-delay: 0.2s; }
+.card-metric:nth-child(3) { animation-delay: 0.3s; }
+.card-metric:nth-child(4) { animation-delay: 0.4s; }
+
+/* Tabla con entrada */
+.card-table {
+  animation: fadeIn 0.8s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Sidebar con slide */
+.sidebar {
+  animation: slideLeft 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Navbar con fade-down */
+.navbar-verde {
+  animation: fadeDown 0.6s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+/* =================== KEYFRAMES =================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* =================== Interacciones =================== */
+
+/* Botones animados */
+.btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.2);
+}
+
+/* Filas de tabla animadas al hover */
+.table-dark tbody tr:hover {
+  background: rgba(60, 112, 181, 0.2);
+  transform: scale(1.01);
+}
+
+/* Cards hover efecto flotante */
+.card-metric:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}

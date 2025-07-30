@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <!-- Enlace al CSS externo -->
   <link rel="stylesheet" th:href="@{/css/index.css}">
  
@@ -52,7 +54,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex align-items-center" href="/home/Pruebas/">
+          <a class="nav-link d-flex align-items-center" href="#PruebasQA">
             <i class="bi bi-gear-wide-connected me-1"></i> Pruebas Automatizadas
           </a>
         </li>
@@ -133,47 +135,46 @@
 
 <!-- EQUIPO CON ESTILO MODERNO -->
 <section class="container equipo-section py-5">
-  <!-- Historia -->
+
+  <!-- ORGANIZACIÓN CON MONDAY -->
   <div class="row align-items-center mb-5" data-aos="fade-right">
     <div class="col-md-6 mb-4 mb-md-0">
-      <div class="card-custom animate-float">
-        <h3 class="titulo-seccion">Nuestra Historia</h3>
-        <p class="texto-justificado">
-          Somos un equipo unido por la pasión por la calidad. Desde nuestros inicios, hemos trabajado con compromiso,
-          curiosidad y mejora constante. Cada miembro aporta una visión única que fortalece el proceso y eleva el producto.
-          Creemos en detectar oportunidades, no solo errores, y en construir experiencias sólidas para el usuario final.
+      <div class="card-custom animate-float p-4 h-100 d-flex flex-column justify-content-center">
+        <h3 class="titulo-seccion mb-3" style="font-size: 1.8rem;">Planeación Ágil</h3>
+        <p class="texto-justificado" style="font-size: 1.05rem;">
+          Monday nos permite organizar tareas, ciclos de prueba y asignaciones con claridad. Cada cambio se planifica, se rastrea y se conecta con nuestros objetivos de calidad.
         </p>
       </div>
     </div>
     <div class="col-md-6 text-center">
-      <img src="https://camo.githubusercontent.com/2366b34bb903c09617990fb5fff4622f3e941349e846ddb7e73df872a9d21233/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f3733303730332f73637265656e73686f74732f363538313234332f6176656e746f2e676966"
+      <img src="https://support.monday.com/hc/article_attachments/20021180494866"
            class="img-fluid equipo-img hover-zoom"
-           alt="Historia QA" />
+           alt="Planeación con Monday" style="max-height: 300px; object-fit: contain;" />
     </div>
   </div>
 
-  <!-- Misión -->
+  <!-- SEGUIMIENTO EN MONDAY -->
   <div class="row align-items-center flex-md-row-reverse" data-aos="fade-left">
     <div class="col-md-6 mb-4 mb-md-0">
-      <div class="card-custom animate-float">
-        <h3 class="titulo-seccion">Nuestra Misión</h3>
-        <p class="texto-justificado">
-          Garantizar que cada línea de código entregue valor real. Nos enfocamos en identificar fallos antes de que
-          lleguen al usuario final, anticipándonos a los problemas y asegurando una experiencia fluida, confiable y sin
-          interrupciones. Probamos con propósito, pensando siempre en la calidad como experiencia.
+      <div class="card-custom animate-float p-4 h-100 d-flex flex-column justify-content-center">
+        <h3 class="titulo-seccion mb-3" style="font-size: 1.8rem;">Seguimiento y Control</h3>
+        <p class="texto-justificado" style="font-size: 1.05rem;">
+          Con tableros personalizados en Monday, damos seguimiento visual a cada prueba, bloqueador o avance. Esto nos ayuda a priorizar y entregar sin retrasos.
         </p>
       </div>
     </div>
     <div class="col-md-6 text-center">
-      <img src="https://uploads.toptal.io/blog/image/124643/toptal-blog-image-1510215092658-4d04a3782aaced4a643c9477b9790e0c.gif"
+      <img src="https://support.monday.com/hc/article_attachments/23735174157458"
            class="img-fluid equipo-img hover-zoom"
-           alt="Misión QA" />
+           alt="Seguimiento en Monday" style="max-height: 300px; object-fit: contain;" />
     </div>
   </div>
+
 </section>
 
 
 
+      <!-- SECCIÓN DE LOGROS -->
 <section id="logros-qa" class="fade-in-scale">
   <div class="container">
     <h2 class="text-center mb-5" style="color: var(--white); font-size: 2.8rem; font-weight: 800;">
@@ -184,7 +185,7 @@
       <!-- Logro 1 -->
       <div class="timeline-item">
         <div class="timeline-icon">
-          <img src="https://www.ifs.com.mx/newimg/ubicacion.gif" alt="Icono 1" />
+          <img src="https://www.ifs.com.mx/newimg/ubicacion.gif" alt="Cobertura" />
         </div>
         <div class="timeline-content">
           <h5>Cobertura del 98%</h5>
@@ -195,7 +196,7 @@
       <!-- Logro 2 -->
       <div class="timeline-item">
         <div class="timeline-icon">
-          <img src="https://www.robotron.com.ec/img/tuercas.gif" alt="Icono 2" />
+          <img src="https://www.robotron.com.ec/img/tuercas.gif" alt="CI/CD" />
         </div>
         <div class="timeline-content">
           <h5>Automatización CI/CD</h5>
@@ -206,7 +207,7 @@
       <!-- Logro 3 -->
       <div class="timeline-item">
         <div class="timeline-icon">
-          <img src="https://images.icon-icons.com/1808/PNG/512/bug_115148.png" alt="Icono 3" />
+          <img src="https://images.icon-icons.com/1808/PNG/512/bug_115148.png" alt="Bugs" />
         </div>
         <div class="timeline-content">
           <h5>Reducción de Bugs</h5>
@@ -214,6 +215,26 @@
         </div>
       </div>
     </div>
+
+    <!-- CERTIFICACIONES -->
+<div class="certifications text-center mt-5">
+  
+  <div class="d-flex justify-content-center align-items-center flex-wrap mt-4 gap-5">
+    <div>
+      <img src="https://cyberhoot.com/wp-content/uploads/2022/05/NIST-1000x627.png"
+           alt="Certificación NIST"
+           class="img-fluid equipo-img hover-zoom"
+           style="height: 150px; border-radius: 12px;">
+    </div>
+    <div>
+      <img src="https://www.idrnd.ai/wp-content/uploads/2021/04/IBETA-COMPLIANT-ISO-30107-3-logo-New.png"
+           alt="Certificación IBETA"
+           class="img-fluid equipo-img hover-zoom"
+           style="height: 150px; border-radius: 12px;">
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -268,7 +289,7 @@
              alt="Logo Empresa"
              class="testimonial-logo mb-3">
         <p class="testimonial-text">
-          Su nivel de detalle es impresionante. Recomiendo su servicio 100%.
+          La atención personalizada y profesional nos ayudó a mejorar la calidad.
         </p>
         <h6 class="testimonial-author">
           — Punto Casa de Bolsa
@@ -285,7 +306,7 @@
           Gracias a sus pruebas encontramos fallos críticos antes de producción.
         </p>
         <h6 class="testimonial-author">
-          — Grupo salinas
+          — Grupo Salinas
         </h6>
       </div>
     </div>
@@ -296,7 +317,7 @@
              alt="Logo Empresa"
              class="testimonial-logo mb-3">
         <p class="testimonial-text">
-          Su nivel de detalle es impresionante. Recomiendo su servicio 100%.
+          Su compromiso con la calidad superó nuestras expectativas.
         </p>
         <h6 class="testimonial-author">
           — Banco Azteca
@@ -304,14 +325,13 @@
       </div>
     </div>
 
-
     <div class="col-md-3 testimonial-card" data-aos="flip-left" data-aos-delay="200">
       <div class="testimonial-inner">
         <img src="https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/dzkqy2t2ow6tsuenwjyt"
              alt="Logo Empresa"
              class="testimonial-logo mb-3">
         <p class="testimonial-text">
-          Su nivel de detalle es impresionante. Recomiendo su servicio 100%.
+          Servicio excepcional, siempre atentos a nuestras necesidades.
         </p>
         <h6 class="testimonial-author">
           — Sumsug
@@ -322,9 +342,60 @@
   </div>
 </section>
 
+
+
+<!-- Pruebas Automatizadas -->
+<section id="pruebas-automatizadas" class="container-fluid py-5">
+  <h2 class="text-center mb-4 seccion-titulo" data-aos="fade-up">
+    Pruebas Automatizadas
+    <span class="titulo-subrayado"></span>
+  </h2>
+
+  <!-- Panel 1 -->
+  <div class="row align-items-center mb-5 seccion-panel" data-aos="fade-right">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="https://www.w3web.net/wp-content/uploads/2022/09/postmanApi-min.gif" alt="Postman Testing" class="img-fluid img-animada shadow-sm">
+    </div>
+    <div class="col-md-6">
+      <h4 class="panel-titulo">Validación con Postman</h4>
+      <p class="panel-texto">
+        Utilizamos Postman para pruebas automatizadas en servicios REST. Validamos respuestas HTTP, tiempos de respuesta y estructuras JSON mediante colecciones con tests personalizados, asegurando la integridad antes de cada integración.
+      </p>
+    </div>
+  </div>
+
+  <!-- Panel 2 -->
+  <div class="row align-items-center mb-5 flex-md-row-reverse seccion-panel" data-aos="fade-left">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="https://sormuras.github.io/blog/2018-09-05-junit-5.3-dynamic-test-source.gif" alt="JUnit en Java" class="img-fluid img-animada shadow-sm">
+    </div>
+    <div class="col-md-6">
+      <h4 class="panel-titulo">Cobertura con JUnit</h4>
+      <p class="panel-texto">
+        Con JUnit implementamos pruebas unitarias sobre componentes Java. Verificamos controladores, servicios y lógica de negocio. Generamos reportes con JaCoCo para mantener alta cobertura y calidad del código.
+      </p>
+    </div>
+  </div>
+
+  <!-- Panel 3 -->
+  <div class="row align-items-center mb-5 seccion-panel" data-aos="zoom-in">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <img src="https://devopscube.com/content/images/2025/03/multi-branch-workflow-git-1.gif" alt="Integración Continua" class="img-fluid img-animada shadow-sm">
+    </div>
+    <div class="col-md-6">
+      <h4 class="panel-titulo">Integración Continua</h4>
+      <p class="panel-texto">
+        Automatizamos pruebas en pipelines CI/CD con Jenkins y GitHub Actions. Cada push ejecuta tests automáticamente, detectando errores tempranos y asegurando entregas estables y de calidad sin frenar el desarrollo.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
  <!-- PREGUNTAS FRECUENTES -->
 <section id="faq" class="container py-5 faq-section" data-aos="fade-up">
-  <h2 class="text-center mb-4 faq-title">Preguntas frecuentes</h2>
+   <h2 class="text-center mb-5 testimonial-title">Preguntas Frecuentes</h2>
   <div class="accordion" id="faqAccordion">
 
     <div class="accordion-item">
@@ -398,89 +469,95 @@
 </section>
 
 
+<!-- VIDEO -->
 
-  
-
-
-<!-- VIDEO YOUTUBE -->
-<section class="video-section" data-aos="zoom-in" style="padding: 2rem;">
-  <h2 style="text-align: center;">Conoce más sobre nuestro equipo</h2>
- 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 2rem; margin-top: 2rem;">
-
-    <!-- Video -->
-    <div style="flex: 1 1 300px; max-width: 700px;">
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <iframe src="https://www.youtube.com/embed/HxPO7iwvsvc" title="Video de presentación"
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
-      </div>
-    </div>
-
-    <!-- Párrafo descriptivo en recuadro -->
-    <div style="flex: 1 1 300px; max-width: 500px;">
-      <div class="card-panel teal lighten-5 z-depth-3" style="border-radius: 12px;">
-        <h5 class="teal-text text-darken-4">¿Qué encontrarás en este video?</h5>
-        <p style="font-size: 1rem; line-height: 1.6; margin-top: 1rem;">
-          En este video te compartimos cómo trabajamos en equipo, nuestras herramientas clave y cómo aseguramos la calidad en cada etapa del desarrollo. ¡Una mirada cercana a nuestra pasión por el testing!
+<section class="video-hero-section py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      <!-- Columna de texto -->
+      <div class="col-md-6 text-light text-justify">
+        <h2 class="display-5 fw-bold mb-4">Pruebas a nivel usario</h2>
+        <p class="lead mb-4">
+          Detrás de cada producto exitoso hay un equipo que cuida cada detalle. Descubre cómo trabajamos, las herramientas que usamos y por qué nuestro enfoque garantiza calidad, eficiencia y resultados.
         </p>
       </div>
-    </div>
 
+      <!-- Columna del video con portada -->
+      <div class="col-md-6">
+        <div class="video-thumbnail" onclick="loadVideo(this)">
+          <img src="https://img.youtube.com/vi/HxPO7iwvsvc/maxresdefault.jpg" alt="Video" class="img-fluid rounded-4 shadow">
+          <div class="play-button"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-
-<!-- SECCIÓN DE CONTACTO MEJORADA CON ESTILO OSCURO -->
+<!-- SECCIÓN DE CONTACTO REDISEÑADA -->
 <section id="contacto" class="container py-5" data-aos="fade-up">
-  <div class="row justify-content-center align-items-center">
+  <div class="row align-items-center g-5">
 
-    <!-- Columna Izquierda: Información de contacto con íconos -->
-    <div class="col-md-6 mb-4 mb-md-0">
-      <h2 class="mb-4">¿Tienes alguna duda?</h2>
-      <p style="font-size: 1.1rem; color: var(--text-light);">
-        Si deseas comunicarte con nosotros, puedes usar el formulario o escribirnos directamente a través de los siguientes medios:
+    <!-- COLUMNA IZQUIERDA: Título + Explicación + Botón + Contactos -->
+    <div class="col-lg-6">
+      <h2 class="mb-4 display-5 fw-bold text-light">¿Tienes dudas o quieres trabajar con nosotros?</h2>
+
+      <p class="text-light mb-4" style="font-size: 1.1rem;">
+        Manda tu informacion detallada de tu proyecto en este formulario y nosotros te atendemos
       </p>
 
-      <ul class="list-unstyled mt-4" style="font-size: 1.1rem;">
-        <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" style="width: 28px; margin-right: 12px;">
-          <a href="mailto:equipoqa@gmail.com" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">equipoQA@gmail.com</a>
+      <!-- BOTÓN DE MONDAY DESTACADO -->
+      <div class="mb-5">
+        <a href="https://forms.monday.com/forms/e9ec664072f7072d6480b738716c00be?r=use1" target="_blank"
+           class="btn btn-success px-4 py-2 rounded-pill d-inline-flex align-items-center"
+           style="font-weight: 600; gap: 10px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/942/942799.png" alt="Formulario" width="24">
+          Solicitar ahora (formulario Monday)
+        </a>
+      </div>
+
+      <!-- Íconos de contacto con mejor jerarquía -->
+      <ul class="list-unstyled text-light" style="font-size: 1.05rem;">
+        <li class="mb-3 d-flex align-items-center gap-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="22">
+          <a href="mailto:equipoqa@gmail.com" class="text-decoration-none text-light">equipoQA@gmail.com</a>
         </li>
-        <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" style="width: 28px; margin-right: 12px;">
-          <a href="https://www.instagram.com/dicio.ai/" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">@Dicio</a>
+        <li class="mb-3 d-flex align-items-center gap-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="22">
+          <a href="https://www.instagram.com/gruposalinas/" class="text-decoration-none text-light">@gruposalinas</a>
         </li>
-        <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" style="width: 28px; margin-right: 12px;">
-          <a href="https://github.com" target="_blank" style="text-decoration: none; color: var(--accent-color); font-weight: 500;">github.com</a>
+        <li class="mb-3 d-flex align-items-center gap-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="22">
+          <a href="https://github.com" class="text-decoration-none text-light">github.com</a>
         </li>
-        <li class="mb-3 d-flex align-items-center">
-          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Teléfono" style="width: 28px; margin-right: 12px;">
-          <span style="color: var(--text-light); font-weight: 500;">+52 55 1234 5678</span>
+        <li class="d-flex align-items-center gap-2">
+          <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Teléfono" width="22">
+          <span>+52 56-21-31-23-85</span>
         </li>
       </ul>
     </div>
 
-    <!-- Columna Derecha: Formulario de contacto -->
-    <div class="col-md-6">
-      <form id="contactForm" class="fade-in-scale" novalidate style="background: var(--card-gradient); padding: 2rem; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.5);">
-        <h4 class="mb-4 text-center" style="color: var(--accent-color);">Formulario de contacto</h4>
+    <!-- COLUMNA DERECHA: FORMULARIO -->
+    <div class="col-lg-6">
+      <form id="contactForm" class="fade-in-scale"
+            style="background: var(--card-gradient); padding: 2rem; border-radius: 20px; box-shadow: 0 8px 25px rgba(0,0,0,0.5);">
+         <h4 class="text-center mb-5 testimonial-title">Contacto directo</h4>
 
         <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
+          <label for="nombre" class="form-label text-light">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" class="form-control"
+                 style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
         </div>
 
         <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input id="email" name="email" type="email" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
+          <label for="email" class="form-label text-light">Correo electrónico</label>
+          <input id="email" name="email" type="email" class="form-control"
+                 style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required>
         </div>
 
         <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" class="form-control" style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required></textarea>
+          <label for="mensaje" class="form-label text-light">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" class="form-control"
+                    style="background-color: #1b1b2f; border: none; border-bottom: 2px solid var(--accent-color); color: var(--white);" required></textarea>
         </div>
 
         <div class="text-center mt-4">
@@ -490,8 +567,6 @@
     </div>
   </div>
 </section>
-
-
 
 <!-- FOOTER MEJORADO CON REDES SOCIALES CENTRADAS -->
 <footer class="bg-dark text-white py-4 mt-5">
@@ -533,5 +608,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+
+<script>
+  function loadVideo(el) {
+    const iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/HxPO7iwvsvc?autoplay=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.classList.add("img-fluid", "rounded-4", "shadow");
+
+    el.parentNode.replaceChild(iframe, el);
+  }
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true
+  });
+</script>
 </body>
 </html>
