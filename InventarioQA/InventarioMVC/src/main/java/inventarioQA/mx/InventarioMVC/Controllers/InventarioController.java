@@ -100,10 +100,39 @@ public class InventarioController {
     }
 
     @PostMapping("/guardar-dispositivo")
-    public String guardarDispositivo(@ModelAttribute Device device) {
+public String guardarDispositivo(@ModelAttribute Device device) {
+    if (device.getId() != null) {
+        Device existente = deviceRepository.findById(device.getId()).orElse(null);
+
+        if (existente != null) {
+            // Actualizar solo los campos modificables
+            existente.setProducto(device.getProducto());
+            existente.setMarca(device.getMarca());
+            existente.setModelo(device.getModelo());
+            existente.setUsuarioActual(device.getUsuarioActual());
+            existente.setNumeroPlacaActivoFijo(device.getNumeroPlacaActivoFijo());
+            existente.setDescripcion(device.getDescripcion());
+            existente.setImei(device.getImei());
+            existente.setCecoOperativo(device.getCecoOperativo());
+            existente.setFactura(device.getFactura());
+            existente.setSoc(device.getSoc());
+            existente.setDm(device.getDm());
+            existente.setAsignadoEnActivoFijo(device.getAsignadoEnActivoFijo());
+            existente.setPlacaActivoFijo(device.getPlacaActivoFijo());
+
+            // Las imágenes NO se modifican aquí
+            deviceRepository.save(existente);
+        } else {
+            // Si no existía, guarda como nuevo
+            deviceRepository.save(device);
+        }
+    } else {
+        // Si no hay ID, se trata de un nuevo registro
         deviceRepository.save(device);
-        return "redirect:/home/devices";
     }
+
+    return "redirect:/home/devices";
+}
 
     @GetMapping("/eliminar-dispositivo/{id}")
     public String eliminarDispositivo(@PathVariable Long id) {

@@ -125,14 +125,24 @@
           <p th:text="${device.descripcion}">Sin descripción</p>
         </div>
 
-        <!-- Sección escalable de imágenes -->
-        <div th:each="img : ${imagenes}" class="col-md-12 text-center">
-          <h5 class="foto-titulo" th:text="${img.value}">Descripción de imagen</h5>
-          <img th:src="|/home/device/image/${device.id}/${img.key}|"
-               th:alt="${img.value}"
-               class="foto-dispositivo" />
+       
+  <!-- Sección de galería de imágenes -->
+<section class="galeria-imagenes container my-5">
+  <h3 class="text-center text-light mb-4" data-aos="fade-up">Galería del Dispositivo</h3>
+
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3" th:each="img : ${imagenes}">
+      <div class="foto-card" data-aos="zoom-in">
+        <div class="foto-wrapper">
+          <img th:src="|/home/device/image/${device.id}/${img.key}|" 
+               th:alt="${img.value}" 
+               class="img-fluid foto-galeria" />
         </div>
+        <p class="foto-descripcion mt-2 text-light" th:text="${img.value}">Nombre de la foto</p>
       </div>
+    </div>
+  </div>
+</section>
 
       <div class="text-center mt-4">
         <a href="/home/devices" class="btn btn-secondary btn-volver">
@@ -141,5 +151,7 @@
       </div>
     </div>
   </div>
+
+  
 </body>
 </html>
