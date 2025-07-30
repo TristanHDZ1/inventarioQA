@@ -96,47 +96,59 @@ public class Device {
     @Column(name = "Usuario Actual")
     private String usuarioActual;
 
-    @Column(name = "Carta de entrega")
-    private String cartaEntrega;
+    @Lob
+    @Column(name = "Carta de entrega", columnDefinition = "LONGBLOB")
+    private byte[] cartaEntrega;
 
     @Column(name = "Foto IMEI")
     private String fotoImei;
 
-    @Column(name = "Foto Serie")
-    private String fotoSerie;
+    @Lob
+    @Column(name = "Foto Serie", columnDefinition = "LONGBLOB")
+    private byte[] fotoSerie;
 
-    @Column(name = "Foto encendido")
-    private String fotoEncendido;
+    @Lob
+    @Column(name = "Foto encendido", columnDefinition = "LONGBLOB")
+    private byte[] fotoEncendido;
 
-    @Column(name = "Foto Frente")
-    private String fotoFrente;
+    @Lob
+    @Column(name = "Foto Frente", columnDefinition = "LONGBLOB")
+    private byte[] fotoFrente;
 
-    @Column(name = "Foto Reverso ")
-    private String fotoReverso;
+    @Lob
+    @Column(name = "Foto Reverso ", columnDefinition = "LONGBLOB")
+    private byte[] fotoReverso;
 
     @Column(name = "Foto Reverso con protector")
     private String fotoReversoConProtector;
 
-    @Column(name = "Foto")
-    private String foto1;
+    @Lob
+    @Column(name = "Foto", columnDefinition = "LONGBLOB")
+    private byte[] foto1;
 
-    @Column(name = "Foto.1")
-    private String foto2;
+    @Lob
+    @Column(name = "Foto.1", columnDefinition = "LONGBLOB")
+    private byte[] foto2;
 
-    @Column(name = "Foto.2")
-    private String foto3;
+    @Lob
+    @Column(name = "Foto.2", columnDefinition = "LONGBLOB")
+    private byte[] foto3;
 
-    @Column(name = "Foto.3")
-    private String foto4;
+    @Lob
+    @Column(name = "Foto.3", columnDefinition = "LONGBLOB")
+    private byte[] foto4;
 
-    @Column(name = "Foto.4")
-    private String foto5;
+    @Lob
+    @Column(name = "Foto.4", columnDefinition = "LONGBLOB")
+    private byte[] foto5;
 
-    @Column(name = "Foto.5")
-    private String foto6;
+    @Lob
+    @Column(name = "Foto.5", columnDefinition = "LONGBLOB")
+    private byte[] foto6;
 
-    @Column(name = "Foto.6")
-    private String foto7;
+    @Lob
+    @Column(name = "Foto.6", columnDefinition = "LONGBLOB")
+    private byte[] foto7;
 
     @Column(name = "Asignación Actual.")
     private String asignacionActual;

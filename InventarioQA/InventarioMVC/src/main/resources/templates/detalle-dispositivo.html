@@ -74,12 +74,29 @@
       background: var(--hover-gradient);
       color: var(--white);
     }
+
+    .foto-dispositivo {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      margin: 1rem auto;
+    }
+
+    .foto-titulo {
+      color: var(--accent-color);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="card">
-      <h2 class="card-title"><i class="bi bi-info-circle me-2"></i>Información completa del dispositivo</h2>
+      <h2 class="card-title mb-4">
+        <i class="bi bi-info-circle me-2"></i>Información completa del dispositivo
+      </h2>
 
       <div class="row">
         <div class="col-md-6 info-item">
@@ -107,10 +124,18 @@
           <strong>Descripción:</strong>
           <p th:text="${device.descripcion}">Sin descripción</p>
         </div>
+
+        <!-- Sección escalable de imágenes -->
+        <div th:each="img : ${imagenes}" class="col-md-12 text-center">
+          <h5 class="foto-titulo" th:text="${img.value}">Descripción de imagen</h5>
+          <img th:src="|/home/device/image/${device.id}/${img.key}|"
+               th:alt="${img.value}"
+               class="foto-dispositivo" />
+        </div>
       </div>
 
       <div class="text-center mt-4">
-        <a href="/home/devices" class="btn btn-volver">
+        <a href="/home/devices" class="btn btn-secondary btn-volver">
           <i class="bi bi-arrow-left-circle me-2"></i>Volver a la tabla
         </a>
       </div>
