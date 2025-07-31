@@ -1,8 +1,8 @@
 No,Factura,CeCo_Operativo,Soc,DM,Placa_de_Activo_Fijo?,Asignados_(nombre),#_Placa_de_Activo_Fijo,Asignado_en_Activo_Fijo?,Producto,Marca,Modelo,Serie,IMEI,Megapíxeles_camara_frontal,Megapíxeles_camara_trasera,RAM,Almacenamiento,Sistema_operativo,Núm_de_teléfono,Descripción,Accesorios,Folio_del_cubo_cargador,Fecha_de_posesión,Nombre_de_quien_lo_entrego,Departamento_Responsable,Usuario_Actual,Asignación_Actual
 1.0,70760.0,100326.0,15.0,2000076.0,SI,,GS1770817,SI,Laptop,Lenovo,ThinkPadE14,PF30FATE,,0.307,,16GB,256GB,W10,,"2.80GHz, 16GB en RAM, 256GB DD, Procesador Core i7",Mochila,Cargador 1660327,20/07/2022,Ramon Manjarrez Hernández,QA,Marco Antonio Figueroa Reyes,Marco Antonio Figueroa Reyes 20/07/22
 2.0,,107106.0,15.0,2000009.0,SI,,GS1725403,SI,Laptop,DELL,Latitude 5511,6W2V593,,0.9,,16GB,512GB,W10,,"2.70GHz, 16GB en RAM, 512GB DD, Procesador Core i7",,Cargador OR2M8K,,Fernando Ramos,QA,Ramon Manjarrez Hernández,Equipo asignado a Ramon Manjarrez
-3.0,,105300.0,15.0,2000063.0,SI,,GS1771399,SI,Macbook,Apple,"MacBook Pro
-",C02G81BKMD6T,,,,,,,,MACBOOK,,,16/08/2024,Ricardo Contreras Zetina,QA,Ramon Manjarrez Hernández,Equipo asignado a Ramon Manjarrez 16/08/2024
+3.0,,105300.0,15.0,2000063.0,SI,,GS17711399,SI,Macbook,Apple,"MacBook Pro
+",C02G81BKMD6T,,,,,,,,MACBOOK,,,16/08/2024,Ricardo Contreras Zetina,QA,Diego Ceron Gonzalez ,Equipo asignado a Ramon Manjarrez 16/08/2024
 4.0,,,,,SI,,GS1778951,SI,Macbook,Apple,"MacBook Pro 13 M1
 ","C02GC1U8Q05P
 ",,720mp,,16 GB,512 GB,macOS Sonoma 14.4,,,Mochila,,06/08/2024,Ramón Manjarrez,QA,Jose Luis Montes De Oca Muñoz,Equipo asignado a Jose Luis Montes De Oca Muñoz 06/08/2024
@@ -12,173 +12,152 @@ No,Factura,CeCo_Operativo,Soc,DM,Placa_de_Activo_Fijo?,Asignados_(nombre),#_Plac
 8.0,,107106.0,15.0,2000051.0,SI,,GS1771116,SI,Macbook,Apple,MacBook Pro,C02G71SAQ05P,,,,16GB,512GB,macOS Monterrey,,"16GB en RAM, 512GB DD, ",,Cargador 180342-11,03/04/2023,Ramon Manjarrez Hernández,QA,Denisse Viridiana Umaña Roldán,En custodia Ramon Manjarrez  12/08/2022
 9.0,,,15.0,2000096.0,SI,,GS1810644,SI,Tablet,Microsoft,Surface Go 3   8VA-00001,0B33WMR213833F,,,,8GB,118GB,W11,,"Intel (R) Pentium(R) CPU GOLD 6500Y @ 1.10GHz 1.61GHz 8GB RAM SO de 64 bits, 1920 x 1280 procesador x64 , 118GB DD windows 11",,,03/04/2023,,QA,María Fernanda Umaña Roldán  ,En custodia Ramon Manjarrez  12/08/2022
 10.0,,,,,SI,,GS1888244,NO,Desktop,HP,HP ProDesk 400 G6 Desktop Mini PC,8CC2190K0N,,,,8GB,237GB,W11,,HP ProDesk 400 G6 Desktop Mini PC,"1 Cable de corriente (CT: WHQRPOD3GG61YP OD), 1 mouse (SN: 9CT2100MD9), Sin teclado",Cargador de corriente (CT: WHQRPOD3GG61YP OD),10/08/2023,Aaron Reyes/Gamaliel Monroy Gomez,QA,Jorge Suárez Hernández,
-11.0,,,,,SI,,GS1823766,NO,Desktop,DELL,OptiPlex 7090 Ultra,DF7S0M3,,,,8GB,235GB,W10,,Desktop Dell OptiPlex 7090 Ultra,"1 Cable de corriente (CN-0C4GCX-LOC00-19U-5FDC-A01), 1 mouse (CN-065K5F-LO300-194-0FL6), Sin teclado",Cargador de corriente (CN-0C4GCX-LOC00-19U-5FDC-A01),10/08/2023,Aaron Reyes/Gamaliel Monroy Gomez,QA,Diego Ceron Gonzalez ,
+11.0,,,,,SI,,GS1823466,NO,Desktop,DELL,OptiPlex 7090 Ultra,DF7S0M3,,,,8GB,235GB,W10,,Desktop Dell OptiPlex 7090 Ultra,"1 Cable de corriente (CN-0C4GCX-LOC00-19U-5FDC-A01), 1 mouse (CN-065K5F-LO300-194-0FL6), Sin teclado",Cargador de corriente (CN-0C4GCX-LOC00-19U-5FDC-A01),10/08/2023,Aaron Reyes/Gamaliel Monroy Gomez,QA,María Fernanda Umaña Roldán,
 12.0,,,,,SI,,GS1888252,NO,Monitor,HP,HP P22h G4,3CM2240LDL,,,,,,,,"Monitor HP 21.5 inch diagonal, 54.61 cm diagonal","1 Cable display port, 1 cable de alimentación",1 cable de alimentación,10/08/2023,Aaron Reyes/Gamaliel Monroy Gomez,QA,Jorge Suárez Hernández,
 13.0,,,,,SI,,GS1823466,NO,Monitor,DELL,DELL P2222H,C7763C3,,,,,,,,Monitor DELL 22,"1 Cable display port, 1 cable de alimentación",1 cable de alimentación,10/08/2023,Aaron Reyes/Gamaliel Monroy Gomez,QA,Diego Ceron Gonzalez ,
 14.0,,107106.0,15.0,2000085.0,NO,,,SI,Monitor,LG,Generico,108NTNH14839,,,,,,,,"Monitor LG generico, modelo 22MK400H",1 Cable de alimentación,1 Cable de alimentación,28/08/2023,Jesus Calnacasco,QA,Diego Ceron Gonzalez ,
 15.0,,,,,NO,Andrea Cerón González,,,Laptop,HP,14-ck0xxx,,,0.2 MP,,4 GB,111 GB,windows 11 Home Single Language de 64 Bits,,procesador Inter(R) celeron (R) N4000 CPU,,,,,,Andrea Cerón González,Personal
 16.0,,,,,NO,Karen Valeria Manjarrez Paredes,,,Laptop,HP,RF7BFIC2,,,0.2 MP,,12 GB,476 GB,windows 11 Home Single Language de 64 Bits,,Intel(R) Core(TM) i3-10110U CPU @ 2.10GHz   2.59 GHz,,,,,,Karen Valeria Manjarrez Paredes,Personal
-17.0,,,,,NO,Roberto Salvador Marquez Lara,,,MacBook,Apple,MacBook Air 2017,,,Cámara FaceTime HD de 720p,,8 GB,256 GB,macOS Monterey 12.7.6,,.8 GHz Intel Core i5 de dos núcleos,,,,,,Roberto Salvador Marquez Lara,Personal
-18.0,,,,,NO,Luis David Hernández Gonzalez,,,Laptop,Acer,VU2LFULO,,,0.2 MP,,8 GB,256 GB,Windows 11 Home Single Language de 64 Bits,,AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx     2.10 GHz,,,,,,Luis David Hernández Gonzalez,Personal
-19.0,,,,,NO,Denisse Viridiana Umaña Roldán,,,Laptop,Lenovo ,Y510P,,,0.9 MP,,8 GB,893 GB,Widows 10 Pro de 64 Bits,,Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz   2.40 GHz,,,,,,Denisse Viridiana Umaña Roldán,Personal
-20.0,,,,,NO,Cristhian Yahir Hernández González,,,Laptop,HP,14-fq1xxx,,,0.9 MP,,8 GB,256 GB,Windows 11 Home Single Language de 64 Bits,,"AMD Ryzen 3 5300U with Radeon Graphics, 2.10 GHz",,,,,,Diego Ceron Gonzalez ,Personal
-21.0,,,,,NO,María Fernanda Umaña Roldán ,,,Laptop,Gateway,NE56R06m,,,0.9 MP,,8 GB,446 GB,Windows 10 Pro de 64 Bits,,Intel(R) Celeron(R) CPU 1000M @ 1.80GHz   1.80 GHz,,,,,,María Fernanda Umaña Roldán ,Personal
-22.0,,,,,NO,Patricia Vasquez Rojas ,,,Laptop,Acer,ASPIRE E5-575,,,0.9 MP,,8 GB,930 GB,Windows 10 Home de 64 Bits,,Intel(R) Core(TM) i3-6100U CPU @ 2.30GHz   2.30 GHz,,,,,,Patricia Vasquez Rojas ,Personal
-23.0,,,,,NO,Stephanie Itzell Martínez Botello,,,Laptop,HP,15 notebook,,,0.9 MP,,4 GB,128 GB,Windows 10 de 64 Bits,,Intel(R) Pentium(R) CPU  N3540  @ 2.16GHz   2.16 GHz,,,,,,Stephanie Itzell Martínez Botello,Personal
-24.0,,,,,NO,Aranza Astrid ortiz Contreras,,,Desktop,Acer,DESKTOP-HRQ4HVF,,,0.9 MP,,8 GB,510 GB,Windows 10 Pro de 64 Bits,,Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz   3.40 GHz,,,,,,Aranza Astrid ortiz Contreras,Personal
-25.0,,,,,NO,Adriana Alejandra Maya Agundis,,,Laptop,Lenovo,Ideapad 330,,,5 MP,,4GB,256 GB,Windows 10 Home de 64 Bits,,Intel (R) Celeron (R) N4000 CPU @ 1.10 GHz 1.10 GHz,,,,,,Ramon Manjarrez Hernández,Personal
-26.0,,,,,NO,Tristan Javier Cruz Hernández,,,MacBook,Apple,MacBook Air 2020,,,Cámara FaceTime HD de 720p,,8 GB,512 GB,macOs Sequoia 15.0,,Apple M1  neural  16 nucleos ,,,,,,Tristan Javier Cruz Hernández,Personal
-27.0,,,,,NO,Antonio Israel Cruz Hernández,,,MacBook,Apple,MacBook Air 2020,,,Cámara FaceTime HD de 720p,,8 GB,512 GB,macOs Sonome 14.6.1,,Apple M1  neural  16 nucleos ,,,,,,Antonio Israel Cruz Hernández,Personal
-28.0,,,,,NO,Valeria Gpe. Jiménez Arévalo,,,Laptop,Lenovo,ideapad 320,,,0.3 MP,,8 GB,905GB,Windows 10 Home de 64 Bits,,"Procesador AMD A12 Radeon R7 Compute Cores 4C+8G, sistema operativo de 64 bits",,,,,,Valeria Gpe. Jiménez Arévalo,Personal
-29.0,,,,,NO,Ramon Manjarrez Hernández,,,Móvil,Motorola,Moto G 9 Play ,,,8MPx,48 MPx + 2MPx + 2MPx,4GB,64GB,Android 11,5578326318.0,,,,,,,Ramon Manjarrez Hernández,Personal
-30.0,,,,,NO,Andrea Cerón González,,,Móvil,Xiaomi,11 lite 5g NE,,,20MPx,64MPx,8GB,128GB,Android 12,5561087457.0,,,,,,,Andrea Cerón González,Personal
-31.0,,,,,NO,Diego Cerón González,,,Móvil,Xiaomi,Redmi K40 Gaming,,,16MPx,64MPx,12GB,256GB,Android 13,5564528649.0,,,,,,,Diego Cerón González,Personal
-32.0,,,,,NO,Jose Luis Montes De Oca Muñoz,,,Móvil,Apple,iPhone 15,,,16MP,48MP,8GB,128GB,iOS 18.2.1,5551929347.0,,,,,,,Jose Luis Montes De Oca Muñoz,Personal
-33.0,,,,,NO,Jorge Suárez Hernández,,,Móvil,Motorola,moto g9 power,,,16MPx,64MPx,4GB,128GB,Android 11,5583853347.0,,,,,,,Jorge Suárez Hernández,Personal
-34.0,,,,,NO,Marco Antonio Figueroa Reyes,,,Móvil,Xiaomi,11 T Pro,,,13MPx,108MPx,8GB,256GB,Android 12,5513680163.0,,,,,,,Marco Antonio Figueroa Reyes,Personal
-35.0,,,,,NO,Karen Valeria Manjarrez Paredes ,,,Móvil,Apple,Iphone XR,,,12MPx,12MPx,6GB,64GB,iOS 16.7.2,5514007861.0,,,,,,,Karen Valeria Manjarrez Paredes ,Personal
-36.0,,,,,NO,Roberto Salvador Marquez Lara,,,Móvil,Apple,iPhone 15 Pro MAX,,,12 MPx,"48 MP: 24 mm, apertura de ƒ/1.78
-12 MP: 13 mm, apertura de ƒ/2.2
-5x de 12 MP: 120 mm, apertura de ƒ/2.8",8 GB,512 GB,iOS. 18.1.1,5521306685.0,,,,,,,Roberto Salvador Marquez Lara,Personal
-37.0,,,,,NO,Luis David Hernández Gonzalez,,,Móvil,Xiaomi,Poco F4 GT,,,20MPx,64MPx,12GB,256GB,Android 13,5586900752.0,,,,,,,Luis David Hernández Gonzalez,Personal
-38.0,,,,,NO,Denisse Viridiana Umaña Roldán,,,Móvil,HUAWEI,P30 PRO,,,32MPx,40MPx,8GB,256GB,EMUI 12.0.0,5545009713.0,,,,,,,Denisse Viridiana Umaña Roldán,Personal
-39.0,,,,,NO,Cristhian Yahir Hernández González,,,Móvil,Motorola,Motorola one fusion +,,,16MPx,64MPx,4GB,128GB,Android 11,5536807321.0,,,,,,,Diego Ceron Gonzalez ,Personal
-40.0,,,,,NO,María Fernanda Umaña Roldán ,,,Móvil,LG,H870,,,5MPx,13MPx,4GB,32GB,Android 8,5545009113.0,,,,,,,María Fernanda Umaña Roldán ,Personal
-41.0,,,,,NO,Patricia Vasquez Rojas ,,,Móvil,Xiaomi,POCO X3 PRO,,,20MPx,48MPx,6GB,128GB,Android 13,5574924198.0,,,,,,,Patricia Vasquez Rojas ,Personal
-42.0,,,,,NO,Stephanie Itzell Martínez Botello,,,Móvil,Apple	,iPhone 11,,,12MPx,12MPx,6GB,128GB,iOS: 17.0.3,5571862818.0,,,,,,,Stephanie Itzell Martínez Botello,Personal
-43.0,,,,,NO,Aranza Astrid ortiz Contreras,,,Móvil,Apple	,iPhone 12,,,12MPx,12MPx,4GB,64GB,iOS 17.2.1,5527781744.0,,,,,,,Aranza Astrid ortiz Contreras,Personal
-44.0,,,,,NO,Adriana Alejandra Maya Agundis,,,Móvil,Motorola,Moto e7,,,12MPx,48MPx,16GB,32GB,Android 10,5636206203.0,,,,,,,Ramon Manjarrez Hernández,Personal
-45.0,,,,,NO,Tristan Javier Cruz Hernández,,,Móvil,Apple,iPhone 15,,,12MPx,48MPx,8GB,128GB,iOS 18.1.1,5621312385.0,,,,,,,Tristan Javier Cruz Hernández,Personal
-46.0,,,,,NO,Antonio Israel Cruz Hernández,,,Móvil,Nothing,Nothing Phone 2,,,32MP,50MP,12GB +2 GB,256GB,Android 14,5611355170.0,,,,,,,Antonio Israel Cruz Hernández,Personal
-47.0,,,,,NO,Valeria Gpe. Jiménez Arévalo,,,Móvil,HUAWEI,Xiaomi mi 11 lite 5g,,,20MP,64MP,6.0+2.0 GB,128GB,Android 13,5516039281.0,,,,,,,Valeria Gpe. Jiménez Arévalo,Personal
-48.0,,107106.0,15.0,2000046.0,SI,,CEL0000350,SI,Móvil,Apple,iPhone 12 MINI,SC7CDP7PL0GPP,353019118919888.0,12 MP,12 MP,4 GB,64 GB,iOS 15.0,5580358499.0,IPHONE 12MINI 64GB,"cable, funda",Sin cubo cargador,6/25/2021,Raul Reyes,QA,Luis David Hernández Gonzalez,Se le presto a Laura Valle 11/10/2021
-49.0,,107106.0,15.0,2000047.0,SI,,CEL0000351,SI,Móvil,Apple,iPhone Xr,SDX3FR52QKXK1,356827113628651.0,12MP,12MP,3GB,64 GB,iOS 16.1.2,5580358936.0,,"sin accesorios (cargador, cables)",Sin cubo cargador,12/9/2022,Victor Gozalez,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez en custodia 09/12/22
-50.0,,107106.0,15.0,2000048.0,SI,,CEL0000271,SI,Móvil,Apple,iPhone 12,SDNPF18MB0F0X,357076835401893.0,12MP,12MP,4GB,128 GB,iOS 16.1.2,5580359154.0,IPHONE 12 128GB NEGRO        ,sin accesorios (cargador),Sin cubo cargador,12/9/2022,Victor Gozalez,QA,Diego Ceron Gonzalez ,Ramon Manjarrez en custodia 09/12/22
-51.0,,,28.0,2000034.0,SI,,CEL0000820,SI,Móvil,Apple,iPhone 11,SDX3JKC8EN735,359139866144788.0,12MP,12MP,4GB,64 GB,iOS 16.1.2,5523405462.0,TELEFONO IPHONE 11 64GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Ricardo Contreras Zetina,
-52.0,,,28.0,2000035.0,SI,,CEL0000821,SI,Móvil,Apple,iPhone SE 2020,SM7NY7TF6RJ,356908249108576.0,7MP,12MP,3GB,64 GB,iOS 16.1.2,5528580220.0,TELEFONO IPHONE SE 2020 64GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Denisse Viridiana Umaña Roldán,
-53.0,,,28.0,2000036.0,SI,,CEL0000822,SI,Móvil,Apple,iPhone 14 Pro Max,SC339V53WTV,359237901887161.0,48MP,12MP,6GB,128 GB,iOS 18.2,5528981548.0,TELEFONO IPHONE 14 PRO MAX 128GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Marco Antonio Figueroa Reyes,
-54.0,,,28.0,2000037.0,NO,,,SI,Tablet flexible,Tablet flexible,Tablet flexible,,,,,,,,,,,,27/05/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 27/05/2023
-55.0,,,28.0,2000038.0,NO,,,SI,Tablet flexible,Tablet flexible,Tablet flexible,,,,,,,,,,,,27/05/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 27/05/2023
-56.0,,,,,NO,,,,Móvil,Apple,iPhone 11,DX3FD1CUN73D,351057069892862.0,12 MP,12 MP,4 GB,128 GB,iOS 17.5.1,5580357504.0,,"cable, funda",F1610541WTVPMO6BN,6/25/2021,,QA,Ramon Manjarrez Hernández,Se le presto a Marco Antonio Figueroa Reyes 06/10/2021
-57.0,,,,,NO,,,,Móvil,Apple,iPhone 11,DX3FNBTCN73D,355708330559237.0,12 MP,12 MP,4 GB,128 GB,iOS 15.0,5580359040.0,,"cable, funda",FNT1117AZ4XPNKDAP,6/25/2021,,QA,Patricia Vasquez Rojas ,Se presto cargador a Oscar Leon 13/10/2021
-58.0,,,,,NO,,,,Móvil,Apple,iPhone 11,C6KCT1GYN73D,352931118338516.0,12 MP,12 MP,4 GB,128 GB,iOS 17.2.1,5530588938.0,,"cable, funda, audífonos, sin cubo",E186249,6/25/2021,Raul Reyes,QA,Valeria Gpe. Jiménez Arévalo,Se le presto a Diego Ceron Gonzalez 06/10/2021
-59.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,R58M60HLNKA,356009100155283.0,25 MP,25 MP,4 GB,64 GB,Android 11,,,"cable, funda",E312929,6/25/2021,,QA,Luis David Hernández Gonzalez,Se presto celular a Cynthia Yañez 27/10/2021
-60.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,S/N,356010101171022.0,25 MP,25 MP,4 GB,64 GB,Android 11,5580357153.0,,"cable, funda",E312929,6/25/2021,,QA,Ricardo Contreras Zetina,Se presto celular a Cynthia Yañez 27/10/2021
-61.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,R58MA6CD1BF,356010102268785.0,25 MP,25 MP,4 GB,64 GB,Android 11,5580359299.0,,"cable, funda",E312929,6/25/2021,,QA,Roberto Salvador Marquez Lara,Se presto celular a Cynthia Yañez 27/10/2021
-62.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A30,R28M70K7D7F,358392102025664.0,16 MP,16 MP,3 GB,32 GB,Android 11,5621446271.0,,cable,Sin cubo cargador,8/6/2021,,QA,Stephanie Itzell Martínez Botello,Se presto celular a Cynthia Yañez 27/10/2021
-63.0,,,,,NO,,,,Móvil,HUAWEI,Y6,5DN6R19B05004294,862399048434172.0,8 MP,13 MP,2 GB,32 GB,Android 9,,,,Sin cubo cargador,6/29/2021,,QA,Jorge Suárez Hernández,Se presto celular a Cynthia Yañez 27/10/2021
-64.0,,,,,NO,,,,Móvil,ZTE,Blade A5 2020,320517290811,863990059524981.0,8MP,13Mpx/2Mpx,2GB,64GB,Android 11,5548297981.0,,"Cable, cargador, auditofonos",E317999,4/19/2023,Miguel Angel Espinosa Rescala,QA,Patricia Vasquez Rojas,
-65.0,,,,,NO,,,,Móvil,LG,G6 H870S,711KPHG109289,357457081092893.0,5MP,13MP,4GB,32 GB,Android 8,5580358841.0,,"cargador, cable tipo c, audifonos",DB7Y1010019,16/06/2023,Armando Gomez,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 16/06/2023
-66.0,,,,,NO,,,,Móvil,LG,G6 H870S,711KPKN107861,357457081078611.0,5MP,13MP,4GB,32 GB,Android 8,,,"cargador, cable tipo c, audifonos",,16/06/2023,Armando Gomez,QA,Denisse Viridiana Umaña Roldán,Ramon Manjarrez Hernández en custodia 16/06/2023
-67.0,,,,,NO,,,,Móvil,Nokia,5.4,HZQL1849BAL31603725,359004090304683.0,,,,128 GB,Android 12,,Presenta rayones característicos del uso y el cubo de carga no es funcional (comenta Evelyn que se le entrego desde un inicio no funcional).,,,04/04/2024,Evelyn Torres ,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández en custodia 04/04/2024
-68.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,2a415739,990017115515799.0,8MP,13+2+2MP,4GB,64 GB,Android 11,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Stephanie Itzell Martínez Botello,Ramon Manjarrez Hernández en custodia 04/09/2023
-69.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,bd9193ea,990017115545770.0,8MP,13+2+2MP,4GB,64 GB,Android 11,5579478816.0,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Jose Luis Montes De Oca Muñoz,Ramon Manjarrez Hernández en custodia 04/09/2023
-70.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,c7f108c7,990017115525517.0,8MP,13+2+2MP,4GB,64 GB,Android 1,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Tristan Javier Cruz Hernández,Ramon Manjarrez Hernández en custodia 04/09/2023
-71.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,64320db5,990017115541662.0,8MP,13+2+2MP,4GB,64 GB,Android 10,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Aranza Astrid Ortiz Contreras,Ramon Manjarrez Hernández en custodia 04/09/2023
-72.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,6316e230,990017115524551.0,8MP,13+2+2MP,4GB,64 GB,Android 10,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/09/2023
-73.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2202LZ92K8B8 / Caja: 2202LZ92D799,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Aranza Astrid ortiz Contreras,Ramon Manjarrez Hernández en custodia 13/09/2023
-74.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2322LZD38DR8 / Caja: 2322LZD2PED9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Stephanie Itzell Martínez Botello,Ramon Manjarrez Hernández en custodia 13/09/2023
-75.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2322LZD38DV8 / Caja: 2322LZD2PEC9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Diego Cerón González,Ramon Manjarrez Hernández en custodia 13/09/2023
-76.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2202LZ92K808 / Caja: 2202LZ92D8P9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Karen Manjarrez Paredes ,Ramon Manjarrez Hernández en custodia 13/09/2023
-77.0,,,,,NO,,,,iPad,Apple,A2124,DMPYDOOWLMTG,,7MP,,8GB,256GB,iOS,,iPad mini 5ta generación,1 Funda,,,,QA,Denisse Viridiana Umaña Roldán,Cassandra Cazares en custodia 19/07/22
-78.0,,,,,NO,,,,Disco duro,Adata,Adata HD710 Pro,7L3029094857,,,,,1TB,,,1 TB de almacenamiento ,1 cable,,,,QA,Jorge Suárez Hernández,Cassandra Cazares en custodia 22/07/22
-79.0,,,,,NO,,,,Aro de luz,Instant star,ST-A80193,7503032380193,,,,,,,,,"1 tripie, 1 base para celular, 2 controles",,,,QA,Luis David Hernández Gonzalez,Se le presto Aro de luz a Denisse Jimenez Basurto 04/08/2022
-80.0,,,,,NO,,,NO,Teclado,Logitech,Logitech,2321MR118778,,,,,,,,Teclado alambrico,,,30/08/2023,"Compras con los folios: 4548671 Jorge, 4548673 Ramon",QA,Diego Ceron Gonzalez ,Se le presto Teclado a Diego Cerón González 30/08/2023
-81.0,,,,,NO,,,NO,Adaptador Tipo C a HDMI,B-One,CTC-03,,,,,,,,,Cable tipo C a HDMI,,,30/08/2023,"Compras con los folios: 4548671 Jorge, 4548673 Ramon",QA,Diego Ceron Gonzalez ,Se le presto Cable tipo C a HDMI a Diego Cerón González 30/08/2023
-82.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Roberto Salvador Marquez Lara,Roberto Salvador Marquez Lara 04/05/2023
-83.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Diego Ceron Gonzalez ,Cristhian Yahir Hernández González 04/05/2023
-84.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Maria Fernanda Umaña Roldan ,Denisse Lizeth Jimenez Basurto 04/05/2023
-85.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Jorge Suárez Hernández,Jorge Suárez Hernández 04/05/2023
-86.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Aranza Astrid ortiz Contreras,Aranza Astrid ortiz Contreras 21/07/2023
-87.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 04/05/2023
-88.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 04/05/2023
-89.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,"Luis David Hernández Gonzalez
-","Luis David Hernández Gonzalez 04/05/2023
+17.0,,,,,NO,Denisse Viridiana Umaña Roldán,,,Laptop,Lenovo ,Y510P,,,0.9 MP,,8 GB,893 GB,Widows 10 Pro de 64 Bits,,Intel(R) Core(TM) i7-4700MQ CPU @ 2.40GHz   2.40 GHz,,,,,,Denisse Viridiana Umaña Roldán,Personal
+18.0,,,,,NO,María Fernanda Umaña Roldán ,,,Laptop,Gateway,NE56R06m,,,0.9 MP,,8 GB,446 GB,Windows 10 Pro de 64 Bits,,Intel(R) Celeron(R) CPU 1000M @ 1.80GHz   1.80 GHz,,,,,,María Fernanda Umaña Roldán ,Personal
+19.0,,,,,NO,Stephanie Itzell Martínez Botello,,,Laptop,Lenovo,Ideapad Slim 315IAH8,,,2.1 MP,,8 GB,512 GB,windows 11 Home Single Language de 64 Bits,,,,,,,,Stephanie Itzell Martínez Botello,Personal
+20.0,,,,,NO,Aranza Astrid ortiz Contreras,,,Desktop,Acer,DESKTOP-HRQ4HVF,,,0.9 MP,,8 GB,510 GB,Windows 10 Pro de 64 Bits,,Intel(R) Core(TM) i7-4770 CPU @ 3.40GHz   3.40 GHz,,,,,,Aranza Astrid ortiz Contreras,Personal
+21.0,,,,,NO,Tristan Javier Cruz Hernández,,,MacBook,Apple,MacBook Air 2020,,,Cámara FaceTime HD de 720p,,8 GB,512 GB,macOs Sequoia 15.0,,Apple M1  neural  16 nucleos ,,,,,,Tristan Javier Cruz Hernández,Personal
+22.0,,,,,NO,Antonio Israel Cruz Hernández,,,MacBook,Apple,MacBook Air 2020,,,Cámara FaceTime HD de 720p,,8 GB,512 GB,macOs Sonome 14.6.1,,Apple M1  neural  16 nucleos ,,,,,,Antonio Israel Cruz Hernández,Personal
+23.0,,,,,NO,Ramon Manjarrez Hernández,,,Móvil,Motorola,Moto G 9 Play ,,,8MPx,48 MPx + 2MPx + 2MPx,4GB,64GB,Android 11,5578326318.0,,,,,,,Ramon Manjarrez Hernández,Personal
+24.0,,,,,NO,Andrea Cerón González,,,Móvil,Apple,,,,,,,,,5561087457.0,,,,,,,Andrea Cerón González,Personal
+25.0,,,,,NO,Diego Cerón González,,,Móvil,Xiaomi,Redmi K40 Gaming,,,16MPx,64MPx,12GB,256GB,Android 13,5564528649.0,,,,,,,Diego Cerón González,Personal
+26.0,,,,,NO,Jose Luis Montes De Oca Muñoz,,,Móvil,Apple,iPhone 15,,,16MP,48MP,8GB,128GB,iOS 18.2.1,5551929347.0,,,,,,,Jose Luis Montes De Oca Muñoz,Personal
+27.0,,,,,NO,Jorge Suárez Hernández,,,Móvil,Motorola,moto g9 power,,,16MPx,64MPx,4GB,128GB,Android 11,5583853347.0,,,,,,,Jorge Suárez Hernández,Personal
+28.0,,,,,NO,Marco Antonio Figueroa Reyes,,,Móvil,Xiaomi,11 T Pro,,,13MPx,108MPx,8GB,256GB,Android 12,5513680163.0,,,,,,,Marco Antonio Figueroa Reyes,Personal
+29.0,,,,,NO,Karen Valeria Manjarrez Paredes ,,,Móvil,Apple,Iphone XR,,,12MPx,12MPx,6GB,64GB,iOS 16.7.2,5514007861.0,,,,,,,Karen Valeria Manjarrez Paredes ,Personal
+30.0,,,,,NO,Denisse Viridiana Umaña Roldán,,,Móvil,HUAWEI,P30 PRO,,,32MPx,40MPx,8GB,256GB,EMUI 12.0.0,5545009713.0,,,,,,,Denisse Viridiana Umaña Roldán,Personal
+31.0,,,,,NO,María Fernanda Umaña Roldán ,,,Móvil,LG,H870,,,5MPx,13MPx,4GB,32GB,Android 8,5545009113.0,,,,,,,María Fernanda Umaña Roldán ,Personal
+32.0,,,,,NO,Stephanie Itzell Martínez Botello,,,Móvil,Apple	,iPhone 16 Pro,,,12MPx,48MPx,8GB,128GB,iOS: 18.5,5571862818.0,,,,,,,Stephanie Itzell Martínez Botello,Personal
+33.0,,,,,NO,Aranza Astrid ortiz Contreras,,,Móvil,Apple	,iPhone 12,,,12MPx,12MPx,4GB,64GB,iOS 17.2.1,5527781744.0,,,,,,,Aranza Astrid ortiz Contreras,Personal
+34.0,,,,,NO,Tristan Javier Cruz Hernández,,,Móvil,Apple,iPhone 15,,,12MPx,48MPx,8GB,128GB,iOS 18.1.1,5621312385.0,,,,,,,Tristan Javier Cruz Hernández,Personal
+35.0,,,,,NO,Antonio Israel Cruz Hernández,,,Móvil,Nothing,Nothing Phone 2,,,32MP,50MP,12GB +2 GB,256GB,Android 14,5611355170.0,,,,,,,Antonio Israel Cruz Hernández,Personal
+36.0,,107106.0,15.0,2000046.0,SI,,CEL0000350,SI,Móvil,Apple,iPhone 12 MINI,SC7CDP7PL0GPP,353019118919888.0,12 MP,12 MP,4 GB,64 GB,iOS 15.0,5580358499.0,IPHONE 12MINI 64GB,"cable, funda",Sin cubo cargador,6/25/2021,Raul Reyes,QA,Marco Antonio Figueroa Reyes,Se le presto a Laura Valle 11/10/2021
+37.0,,107106.0,15.0,2000047.0,SI,,CEL0000351,SI,Móvil,Apple,iPhone Xr,SDX3FR52QKXK1,356827113628651.0,12MP,12MP,3GB,64 GB,iOS 16.1.2,5580358936.0,,"sin accesorios (cargador, cables)",Sin cubo cargador,12/9/2022,Victor Gozalez,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez en custodia 09/12/22
+38.0,,107106.0,15.0,2000048.0,SI,,CEL0000271,SI,Móvil,Apple,iPhone 12,SDNPF18MB0F0X,357076835401893.0,12MP,12MP,4GB,128 GB,iOS 16.1.2,5580359154.0,IPHONE 12 128GB NEGRO        ,sin accesorios (cargador),Sin cubo cargador,12/9/2022,Victor Gozalez,QA,Diego Ceron Gonzalez ,Ramon Manjarrez en custodia 09/12/22
+39.0,,,28.0,2000034.0,SI,,CEL0000820,SI,Móvil,Apple,iPhone 11,SDX3JKC8EN735,359139866144788.0,12MP,12MP,4GB,64 GB,iOS 16.1.2,5523405462.0,TELEFONO IPHONE 11 64GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Ricardo Contreras Zetina,
+40.0,,,28.0,2000035.0,SI,,CEL0000821,SI,Móvil,Apple,iPhone SE 2020,SM7NY7TF6RJ,356908249108576.0,7MP,12MP,3GB,64 GB,iOS 16.1.2,5528580220.0,TELEFONO IPHONE SE 2020 64GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Denisse Viridiana Umaña Roldán,
+41.0,,,28.0,2000036.0,SI,,CEL0000822,SI,Móvil,Apple,iPhone 14 Pro Max,SC339V53WTV,359237901887161.0,48MP,12MP,6GB,128 GB,iOS 18.2,5528981548.0,TELEFONO IPHONE 14 PRO MAX 128GB,Con cable tipo C a Lightning,Sin cubo cargador,28/04/2023,Armando,QA,Marco Antonio Figueroa Reyes,
+42.0,,,28.0,2000037.0,NO,,,SI,Tablet flexible,Tablet flexible,Tablet flexible,,,,,,,,,,,,27/05/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 27/05/2023
+43.0,,,28.0,2000038.0,NO,,,SI,Tablet flexible,Tablet flexible,Tablet flexible,,,,,,,,,,,,27/05/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 27/05/2023
+44.0,,,,,NO,,,,Móvil,Apple,iPhone 11,DX3FD1CUN73D,351057069892862.0,12 MP,12 MP,4 GB,128 GB,iOS 17.5.1,5580357504.0,,"cable, funda y cubo",F1610541WTVPMO6BN,6/25/2021,,QA,Marco Antonio Figueroa Reyes,Se le presto a Marco Antonio Figueroa Reyes 06/10/2021
+45.0,,,,,NO,,,,Móvil,Apple,iPhone 11,DX3FNBTCN73D,355708330559237.0,12 MP,12 MP,4 GB,128 GB,iOS 15.0,5580359040.0,,"cable, funda y cubo",FNT1117AZ4XPNKDAP,6/25/2021,,QA,Marco Antonio Figueroa Reyes,Se presto cargador a Oscar Leon 13/10/2021
+46.0,,,,,NO,,,,Móvil,Apple,iPhone 11,C6KCT1GYN73D,352931118338516.0,12 MP,12 MP,4 GB,128 GB,iOS 17.2.1,5530588938.0,,"cable, funda, sin cubo",E186249,6/25/2021,Raul Reyes,QA,Marco Antonio Figueroa Reyes,Se le presto a Diego Ceron Gonzalez 06/10/2021
+47.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,R58M60HLNKA,356009100155283.0,25 MP,25 MP,4 GB,64 GB,Android 11,,,"cable, funda, sin cubo",E312929,6/25/2021,,QA,Marco Antonio Figueroa Reyes,Se presto celular a Cynthia Yañez 27/10/2021
+48.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,S/N,356010101171022.0,25 MP,25 MP,4 GB,64 GB,Android 11,5580357153.0,,"cable, funda",E312929,6/25/2021,,QA,Ricardo Contreras Zetina,Se presto celular a Cynthia Yañez 27/10/2021
+49.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,R58MA6CD1BF,356010102268785.0,25 MP,25 MP,4 GB,64 GB,Android 11,5580359299.0,,funda,E312929,6/25/2021,,QA,Marco Antonio Figueroa Reyes,Se presto celular a Cynthia Yañez 27/10/2021
+50.0,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A30,R28M70K7D7F,358392102025664.0,16 MP,16 MP,3 GB,32 GB,Android 11,5621446271.0,,cable,Sin cubo cargador,8/6/2021,,QA,Stephanie Itzell Martínez Botello,Se presto celular a Cynthia Yañez 27/10/2021
+51.0,,,,,NO,,,,Móvil,HUAWEI,Y6,5DN6R19B05004294,862399048434172.0,8 MP,13 MP,2 GB,32 GB,Android 9,,,,Sin cubo cargador,6/29/2021,,QA,Jorge Suárez Hernández,Se presto celular a Cynthia Yañez 27/10/2021
+52.0,,,,,NO,,,,Móvil,ZTE,Blade A5 2020,320517290811,863990059524981.0,8MP,13Mpx/2Mpx,2GB,64GB,Android 11,5548297981.0,,"Cable, cargador, auditofonos",E317999,4/19/2023,Miguel Angel Espinosa Rescala,QA,Marco Antonio Figueroa Reyes,
+53.0,,,,,NO,,,,Móvil,LG,G6 H870S,711KPHG109289,357457081092893.0,5MP,13MP,4GB,32 GB,Android 8,5580358841.0,,"cargador, cable tipo c, audifonos",DB7Y1010019,16/06/2023,Armando Gomez,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 16/06/2023
+54.0,,,,,NO,,,,Móvil,LG,G6 H870S,711KPKN107861,357457081078611.0,5MP,13MP,4GB,32 GB,Android 8,,,"cargador, cable tipo c, audifonos",,16/06/2023,Armando Gomez,QA,Denisse Viridiana Umaña Roldán,Ramon Manjarrez Hernández en custodia 16/06/2023
+55.0,,,,,NO,,,,Móvil,Nokia,5.4,HZQL1849BAL31603725,359004090304683.0,,,,128 GB,Android 12,,Presenta rayones característicos del uso y el cubo de carga no es funcional (comenta Evelyn que se le entrego desde un inicio no funcional).,,,04/04/2024,Evelyn Torres ,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández en custodia 04/04/2024
+56.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,2a415739,990017115515799.0,8MP,13+2+2MP,4GB,64 GB,Android 11,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Stephanie Itzell Martínez Botello,Ramon Manjarrez Hernández en custodia 04/09/2023
+57.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,bd9193ea,990017115545770.0,8MP,13+2+2MP,4GB,64 GB,Android 11,5579478816.0,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Jose Luis Montes De Oca Muñoz,Ramon Manjarrez Hernández en custodia 04/09/2023
+58.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,c7f108c7,990017115525517.0,8MP,13+2+2MP,4GB,64 GB,Android 1,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Tristan Javier Cruz Hernández,Ramon Manjarrez Hernández en custodia 04/09/2023
+59.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,64320db5,990017115541662.0,8MP,13+2+2MP,4GB,64 GB,Android 10,,,"1 cargador, 1 cable tipo C",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Aranza Astrid Ortiz Contreras,Ramon Manjarrez Hernández en custodia 04/09/2023
+60.0,,,,,NO,,,NO,Móvil,OnePlus,Nord N100,6316e230,990017115524551.0,8MP,13+2+2MP,4GB,64 GB,Android 10,,,"1 cubo, 1 cable tipo C y funda",P/N CBA0064AGNC1,04/09/2023,Armando Gomez,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández en custodia 04/09/2023
+61.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2202LZ92K8B8 / Caja: 2202LZ92D799,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Aranza Astrid ortiz Contreras,Ramon Manjarrez Hernández en custodia 13/09/2023
+62.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2322LZD38DR8 / Caja: 2322LZD2PED9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Stephanie Itzell Martínez Botello,Ramon Manjarrez Hernández en custodia 13/09/2023
+63.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2322LZD38DV8 / Caja: 2322LZD2PEC9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Diego Cerón González,Ramon Manjarrez Hernández en custodia 13/09/2023
+64.0,,,,,NO,,,NO,Cámara Web,Logitech,C920 Pro HD,Cam: 2202LZ92K808 / Caja: 2202LZ92D8P9,,,,,,,,WEBCAM FULL HD 1080p 30 fps,1 cable tipo USB integrado a las webcam,,13/09/2023,Armando Gomez,QA,Karen Manjarrez Paredes ,Ramon Manjarrez Hernández en custodia 13/09/2023
+65.0,,,,,NO,,,,iPad,Apple,A2124,DMPYDOOWLMTG,,7MP,,8GB,256GB,iOS,,iPad mini 5ta generación,1 Funda,,,,QA,Denisse Viridiana Umaña Roldán,Cassandra Cazares en custodia 19/07/22
+66.0,,,,,NO,,,,Disco duro,Adata,Adata HD710 Pro,7L3029094857,,,,,1TB,,,1 TB de almacenamiento ,1 cable,,,,QA,Jorge Suárez Hernández,Cassandra Cazares en custodia 22/07/22
+67.0,,,,,NO,,,,Aro de luz,Instant star,ST-A80193,7503032380193,,,,,,,,,"1 tripie, 1 base para celular, 1 control  y 1 cargador.",,,,QA,Marco Antonio Figueroa Reyes,Se le presto Aro de luz a Denisse Jimenez Basurto 04/08/2022
+68.0,,,,,NO,,,NO,Teclado,Logitech,Logitech,2321MR118778,,,,,,,,Teclado alambrico,,,30/08/2023,"Compras con los folios: 4548671 Jorge, 4548673 Ramon",QA,Diego Ceron Gonzalez ,Se le presto Teclado a Diego Cerón González 30/08/2023
+69.0,,,,,NO,,,NO,Adaptador Tipo C a HDMI,B-One,CTC-03,,,,,,,,,Cable tipo C a HDMI,,,30/08/2023,"Compras con los folios: 4548671 Jorge, 4548673 Ramon",QA,Diego Ceron Gonzalez ,Se le presto Cable tipo C a HDMI a Diego Cerón González 30/08/2023
+70.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Ramon Manjarrez Hernández,Roberto Salvador Marquez Lara 04/05/2023
+71.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Diego Ceron Gonzalez ,Cristhian Yahir Hernández González 04/05/2023
+72.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Maria Fernanda Umaña Roldan ,Denisse Lizeth Jimenez Basurto 04/05/2023
+73.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Jorge Suárez Hernández,Jorge Suárez Hernández 04/05/2023
+74.0,,,,,NO,,,,Migratoria Verde,Migratoria Verde,Migratoria Verde,,,,,,,,,Tarjeta migratoria color verde,,,07/12/2022,,QA,Aranza Astrid ortiz Contreras,Aranza Astrid ortiz Contreras 21/07/2023
+75.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 04/05/2023
+76.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 04/05/2023
+77.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Marco Antonio Figueroa Reyes,"Luis David Hernández Gonzalez 04/05/2023
 "
-90.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Ramon Manjarrez Hernández,Cristian Fernando López García 04/05/2023
-91.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,"Luis David Hernández Gonzalez
-","Luis David Hernández Gonzalez 04/05/2023
+78.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Ramon Manjarrez Hernández,Cristian Fernando López García 04/05/2023
+79.0,,,,,NO,,,,Migratoria Crema,Migratoria Crema,Migratoria Crema,,,,,,,,,Tarjeta migratoria color crema,,,09/12/2022,,QA,Marco Antonio Figueroa Reyes,"Luis David Hernández Gonzalez 04/05/2023
 "
-92.0,,,,,NO,,,,INE,INE,INE,,,,,,,,,Credencial INE,,,17/04/2023,,QA, Valeria Gpe. Jiménez Arévalo,Cristian Fernando López García en custodia 17/04/2023
-93.0,,,,,NO,,,,INE,INE,INE,,,,,,,,,Credencial INE,,,19/04/2023,,QA,Miguel Angel Espinosa Rescala,Ramon Manjarrez Hernández 19/04/2023
-94.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, hombre raza blanca",,,02/05/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 04/05/2023
-95.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza negra",,,04/05/2023,,QA,Patricia Vasquez Rojas ,Patricia Vasquez Rojas 04/05/2023
-96.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza negra",,,29/05/2023,,QA,Diego Ceron Gonzalez ,En custodia Luis David Hernández Gonzalez  30/05/2023
-97.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza blanca",,,28/05/2023,,QA, Roberto Salvador Marquez Lara,En custodia Roberto Salvador Marquez Lara  27/01/2025
-98.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza morena clara",,,29/05/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández 27/07/2023
-99.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,Busto de hombre raza negro,,,04/05/2023,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
-100.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, sin cabello",,,04/05/2023,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
-101.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez morena clara, cabello negro",,,04/05/2023,,QA,Denisse Viridiana Umaña Roldán ,Denisse Viridiana Umaña Roldán 04/05/2023
-102.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez blanca, cabello castaño oscuro, barba de candado",,,04/05/2023,,QA,"Luis David Hernández Gonzalez
-",En custodia Luis David Hernández Gonzalez  30/05/2023
-103.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre anciano tez blanca, cabello y bigote blanco",,,12/04/2023,,QA,Aranza Astrid ortiz Contreras,Luis David Hernández Gonzalez 30/05/2023
-104.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez blanca, pelirojo",,,12/04/2023,,QA,"Luis David Hernández Gonzalez
-",En custodia Luis David Hernández Gonzalez  30/05/2023
-105.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez clara, cabello negro",,,27/07/2023,,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández 27/07/2023
-106.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez morena clara, cabello negro, con bigote ",,,12/04/2023,,QA,Patricia Vasquez Rojas ,Patricia Vasquez Rojas 04/05/2023
-107.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, mujer tez clara, sin cabello",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas 04/05/2023
-108.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, cabello color cafe, bigote y barba de candado, ",,,12/04/2023,,QA,Jose Luis Montes De Oca Muñoz,Patricia Vasquez Rojas 04/05/2023
-109.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, sin cabello, bigote y barba de candado, ",,,28/09/2023,,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández 28/09/2023
-110.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre  tez clara, sin cabello",,,02/10/2023,,QA,Roberto Salvador Marquez Lara,Jorge Suárez Hernández 02/10/2023
-111.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre  tez blanca, sin cabello, bigote y barba de candado",,,03/10/2023,,QA,Antonio Israel Cruz Hernández ,Jorge Suárez Hernández 03/10/2023
-112.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, nujer  tez blanca, sin cabello",,,09/10/2023,,QA,Tristan Javier Cruz Hernández,Ramon Manjarrez Hernández en custodia 09/10/2023
-113.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, hombre  tez blanca, sin cabello",,,09/10/2023,,QA,Roberto Salvador Marquez Lara,Ramon Manjarrez Hernández en custodia 09/10/2023
-114.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, hombre  tez moreno clara, sin cabello",,,08/11/2023,,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández en custodia 08/11/2023
-115.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca color castaño,,,,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
-116.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca rizado color negro,,,27/07/2023,,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández 27/07/2023
-117.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio corto, color negro",,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán y María Fernanda Umaña Roldán 04/05/2023
-118.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio largo, color castaño oscuro",,,12/04/2023,,QA,Patricia Vasquez Rojas ,Patricia Vasquez Rojas 04/05/2023
-119.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca cabello largo color negro,,,12/04/2023,,QA,Karen Manjarrez Paredes,Karen Manjarrez Paredes 30/05/2023
-120.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio largo, color castaño oscuro",,,12/04/2023,,QA,"Luis David Hernández Gonzalez 
-",Luis David Hernández Gonzalez y Cristhian Yahir Hernández González 30/05/2023
-121.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio corto, color rubio",,,12/04/2023,,QA,"Luis David Hernández Gonzalez 
-",Luis David Hernández Gonzalez y Cristhian Yahir Hernández González 30/05/2023
-122.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,"Luis David Hernández Gonzalez 
-",Luis David Hernández Gonzalez y Cristhian Yahir Hernández González 12/04/2023
-123.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Karen Valeria Manjarrez Paredes ,Karen Valeria Manjarrez Paredes en custodía 12/04/2023
-124.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán en custodia 12/04/2023
-125.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán en custodia 12/04/2023
-126.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 12/04/2023
-127.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Patricia Vasquez Rojas,Denisse Viridiana Umaña Roldán 24/03/2023
-128.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Aranza Astrid ortiz Contreras,Ramon Manjarrez Hernández en custodia 24/03/2023
-129.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Jorge Suárez Hernández ,Ramon Manjarrez Hernández en custodia 24/03/2023
-130.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,María Fernanda Umaña Roldán ,María Fernanda Umaña Roldán 24/04/2023
-131.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Patricia Vasquez Rojas ,Patricia Vasquez Rojas  24/03/2023
-132.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 24/03/2023
-133.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
-134.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Patricia Vazquez Rojas,Ramon Manjarrez Hernández en custodia 04/05/2023
-135.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez Hernández en custodia 04/05/2023
-136.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
-137.0,,,,,NO,,,NO,Cable USB - Lightning,STF,STF,,,,,,,,,1 Cable USB - Lightning,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Patricia Rojas,Ramon Manjarrez Hernández en custodia 04/05/2023
-138.0,,,,,NO,,,NO,Cable USB - Lightning,STF,STF,,,,,,,,,1 Cable USB - Lightning,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez Hernández en custodia 04/05/2023
-139.0,,,,,NO,,,NO,Cable USB - Tipo C,STF,STF,,,,,,,,,1 Cable USB - Tipo C,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
-140.0,,,,,NO,,,NO,Cable USB - Tipo C,STF,STF,,,,,,,,,1 Cable USB - Tipo C,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
-141.0,,,,,NO,,,,Carta Responsiva,Carta Responsiva,Carta Responsiva,,,,,,,,,Carta responsiva de pases al servicio médico salud digna,,,10/10/2023,,QA,,
-142.0,,,,,NO,,,NO,BAM,Quamtum ,HotSpot HS2,QCHS22323002209,353076551022372.0,,,,,,5579480306.0,"Ruteador inalámbrico portátil (LTE) Quamtum HotSpot HS2 con SIM telcel 5G (8952020023H6293420941F)
+80.0,,,,,NO,,,,INE,INE,INE,,,,,,,,,Credencial INE,,,17/04/2023,,QA,Marco Antonio Figueroa Reyes,Cristian Fernando López García en custodia 17/04/2023
+81.0,,,,,NO,,,,INE,INE,INE,,,,,,,,,Credencial INE,,,19/04/2023,,QA,Miguel Angel Espinosa Rescala,Ramon Manjarrez Hernández 19/04/2023
+82.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, hombre raza blanca",,,02/05/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 04/05/2023
+83.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza negra",,,04/05/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas 04/05/2023
+84.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza negra",,,29/05/2023,,QA,Diego Ceron Gonzalez ,En custodia Luis David Hernández Gonzalez  30/05/2023
+85.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza blanca",,,28/05/2023,,QA,Marco Antonio Figueroa Reyes,En custodia Roberto Salvador Marquez Lara  27/01/2025
+86.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,"Maniqui, mujer raza morena clara",,,29/05/2023,,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández 27/07/2023
+87.0,,,,,NO,,,NO,Maniqui,Maniqui,Maniqui,,,,,,,,,Busto de hombre raza negro,,,04/05/2023,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
+88.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, sin cabello",,,04/05/2023,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
+89.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez morena clara, cabello negro",,,04/05/2023,,QA,Denisse Viridiana Umaña Roldán ,Denisse Viridiana Umaña Roldán 04/05/2023
+90.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez blanca, cabello castaño oscuro, barba de candado",,,04/05/2023,,QA,Marco Antonio Figueroa Reyes,En custodia Luis David Hernández Gonzalez  30/05/2023
+91.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre anciano tez blanca, cabello y bigote blanco",,,12/04/2023,,QA,Aranza Astrid ortiz Contreras,Luis David Hernández Gonzalez 30/05/2023
+92.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez blanca, pelirojo",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,En custodia Luis David Hernández Gonzalez  30/05/2023
+93.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez clara, cabello negro",,,27/07/2023,,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández 27/07/2023
+94.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre tez morena clara, cabello negro, con bigote ",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas 04/05/2023
+95.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, mujer tez clara, sin cabello",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas 04/05/2023
+96.0,,,,,NO,,,NO,Mascara (latex),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, cabello color cafe, bigote y barba de candado, ",,,12/04/2023,,QA,Jose Luis Montes De Oca Muñoz,Patricia Vasquez Rojas 04/05/2023
+97.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre de la tercera edad, tez clara, sin cabello, bigote y barba de candado, ",,,28/09/2023,,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández 28/09/2023
+98.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre  tez clara, sin cabello",,,02/10/2023,,QA,Ricardo Contreras Zetina,Jorge Suárez Hernández 02/10/2023
+99.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de latex, hombre  tez blanca, sin cabello, bigote y barba de candado",,,03/10/2023,,QA,Antonio Israel Cruz Hernández ,Jorge Suárez Hernández 03/10/2023
+100.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, nujer  tez blanca, sin cabello",,,09/10/2023,,QA,Tristan Javier Cruz Hernández,Ramon Manjarrez Hernández en custodia 09/10/2023
+101.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, hombre  tez moreno claro, sin cabello",,,09/10/2023,,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández en custodia 09/10/2023
+102.0,,,,,NO,,,NO,Mascara (silicon),Mascara (silicon),Mascara (silicon),,,,,,,,,"Mascara de silicone, hombre  tez moreno clara, sin cabello",,,08/11/2023,,QA,Diego Ceron Gonzalez ,Ramon Manjarrez Hernández en custodia 08/11/2023
+103.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca color castaño,,,,,QA,Stephanie Itzell Martínez Botello,Stephanie Itzell Martínez Botello 28/08/2023
+104.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca rizado color negro,,,27/07/2023,,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández 27/07/2023
+105.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio corto, color negro",,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán y María Fernanda Umaña Roldán 04/05/2023
+106.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio corto, color castaño.",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas 04/05/2023
+107.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,Peluca cabello largo color negro,,,12/04/2023,,QA,Karen Manjarrez Paredes,Karen Manjarrez Paredes 30/05/2023
+108.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio largo, color castaño oscuro",,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Luis David Hernández Gonzalez 30/05/2023
+109.0,,,,,NO,,,NO,Peluca,Peluca,Peluca,,,,,,,,,"Peluca cabello lacio corto, color rubio",,,12/04/2023,,QA,Diego Ceron Gonzalez ,Cristhian Yahir Hernández González 30/05/2023
+110.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Marco Antonio Figueroa Reyes,Luis David Hernández Gonzalez  12/04/2023
+111.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Karen Valeria Manjarrez Paredes ,Karen Valeria Manjarrez Paredes en custodía 12/04/2023
+112.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán en custodia 12/04/2023
+113.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán en custodia 12/04/2023
+114.0,,,,,NO,,,,Mano rígida,Mano rígida,Mano rígida,,,,,,,,,Mano rígida,,,12/04/2023,,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 12/04/2023
+115.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Marco Antonio Figueroa Reyes,Denisse Viridiana Umaña Roldán 24/03/2023
+116.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Aranza Astrid ortiz Contreras,Ramon Manjarrez Hernández en custodia 24/03/2023
+117.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Jorge Suárez Hernández ,Ramon Manjarrez Hernández en custodia 24/03/2023
+118.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,María Fernanda Umaña Roldán ,María Fernanda Umaña Roldán 24/04/2023
+119.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Marco Antonio Figueroa Reyes,Patricia Vasquez Rojas  24/03/2023
+120.0,,,,,NO,,,,Tabla con clip,Tabla con clip,Tabla con clip,,,,,,,,,Tabla con clip,,,24/03/2023,,QA,Denisse Viridiana Umaña Roldán,Denisse Viridiana Umaña Roldán 24/03/2023
+121.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
+122.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández en custodia 04/05/2023
+123.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez Hernández en custodia 04/05/2023
+124.0,,,,,NO,,,NO,Cargador de pared,STF,STF,,,,,,,,,1 cargador de pared USB,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
+125.0,,,,,NO,,,NO,Cable USB - Lightning,STF,STF,,,,,,,,,1 Cable USB - Lightning,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Marco Antonio Figueroa Reyes,Ramon Manjarrez Hernández en custodia 04/05/2023
+126.0,,,,,NO,,,NO,Cable USB - Lightning,STF,STF,,,,,,,,,1 Cable USB - Lightning,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Antonio Israel Cruz Hernandez,Ramon Manjarrez Hernández en custodia 04/05/2023
+127.0,,,,,NO,,,NO,Cable USB - Tipo C,STF,STF,,,,,,,,,1 Cable USB - Tipo C,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
+128.0,,,,,NO,,,NO,Cable USB - Tipo C,STF,STF,,,,,,,,,1 Cable USB - Tipo C,,,04/05/2023,Compra junto con las impresiones de ibeta,QA,Ramon Manjarrez Hernández,Ramon Manjarrez Hernández en custodia 04/05/2023
+129.0,,,,,NO,,,,Carta Responsiva,Carta Responsiva,Carta Responsiva,,,,,,,,,Carta responsiva de pases al servicio médico salud digna,,,10/10/2023,,QA,,
+130.0,,,,,NO,,,NO,BAM,Quamtum ,HotSpot HS2,QCHS22323002209,353076551022372.0,,,,,,5579480306.0,"Ruteador inalámbrico portátil (LTE) Quamtum HotSpot HS2 con SIM telcel 5G (8952020023H6293420941F)
 Nombre de red (SSID)    Telcel-HS2-1A61
 Contraseña WiFi:    308d151762",1 cable micro USB a USB,,24/10/2023,GrupoSalinas,QA,Jorge Suárez Hernández,Ramon manjarrez en custodia 24/10/2023
-143.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
+131.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
+132.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Marco Antonio Figueroa Reyes,Jorge Suárez Hernández en custodia 09/11/2023
+133.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Denisse Viridiana Umaña Roldán ,Jorge Suárez Hernández en custodia 09/11/2023
+134.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Andrea Ceron Gonzalez,Jorge Suárez Hernández en custodia 09/11/2023
+135.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Diego Ceron Gonzalez,Jorge Suárez Hernández en custodia 09/11/2023
+136.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 09/11/2023
+137.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Karen Valeria Manjarrez Paredes,Jorge Suárez Hernández en custodia 09/11/2023
+138.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Stephanie Itzell Martínez Botello,Jorge Suárez Hernández en custodia 09/11/2023
+139.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Diego Ceron Gonzalez ,Jorge Suárez Hernández en custodia 09/11/2023
+140.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Marco Antonio Figueroa Reyes,Jorge Suárez Hernández en custodia 09/11/2023
+141.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Tristan Javier Cruz Hernández,Jorge Suárez Hernández en custodia 09/11/2023
+142.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Marco Antonio Figueroa Reyes,Jorge Suárez Hernández en custodia 09/11/2023
+143.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA, Jorge Suárez Hernández ,Jorge Suárez Hernández en custodia 09/11/2023
 144.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Marco Antonio Figueroa Reyes,Jorge Suárez Hernández en custodia 09/11/2023
-145.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Denisse Viridiana Umaña Roldán ,Jorge Suárez Hernández en custodia 09/11/2023
-146.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Andrea Ceron Gonzalez,Jorge Suárez Hernández en custodia 09/11/2023
-147.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Diego Ceron Gonzalez,Jorge Suárez Hernández en custodia 09/11/2023
-148.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 09/11/2023
-149.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Karen Valeria Manjarrez Paredes,Jorge Suárez Hernández en custodia 09/11/2023
-150.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Stephanie Itzell Martínez Botello,Jorge Suárez Hernández en custodia 09/11/2023
-151.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Diego Ceron Gonzalez ,Jorge Suárez Hernández en custodia 09/11/2023
-152.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Luis David Hernández Gonzalez,Jorge Suárez Hernández en custodia 09/11/2023
-153.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Tristan Javier Cruz Hernández,Jorge Suárez Hernández en custodia 09/11/2023
-154.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Patricia Vasquez Rojas,Jorge Suárez Hernández en custodia 09/11/2023
-155.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA, Jorge Suárez Hernández ,Jorge Suárez Hernández en custodia 09/11/2023
-156.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Ramon Manjarrez Hernández,Jorge Suárez Hernández en custodia 09/11/2023
-157.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández ,Jorge Suárez Hernández en custodia 09/11/2023
-158.0,,,,,NO,,,NO,Balaclava,Birolathe,,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Antonio Israel Cruz Hernández,Jorge Suárez Hernández en custodia 09/11/2023
-159.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
-160.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
-161.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
-162.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 09/11/2023
-163.0,,,,,NO,,,NO,Móvil,Motorola,G42,ZY32HD2RLB,353028756059634.0,16MP,50MP+ 2MP + 8MP,4GB,128GB,Android13,5579478815.0,,,,1/24/2025,Luis Hector Garcia Soriano  24/01/2025,QA,María Fernanda Umaña Roldán ,María Fernanda Umaña Roldán en custodia 05/02/2025
-164.0,,,,,NO,,,NO,Móvil,Samsung,Galaxy A12,R58RB3YFQSM,352213731863802.0,8MP,48MP,4GB,64GB,Android 12,,,,,1/24/2025,Luis Hector Garcia Soriano  24/01/2025,QA,Andrea Cerón González,Andrea Cerón González
+145.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández ,Jorge Suárez Hernández en custodia 09/11/2023
+146.0,,,,,NO,,,NO,Balaclava,Birolathe,,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Antonio Israel Cruz Hernández,Jorge Suárez Hernández en custodia 09/11/2023
+147.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
+148.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
+149.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jose Luis Montes De Oca Muñoz,Jorge Suárez Hernández en custodia 09/11/2023
+150.0,,,,,NO,,,NO,Balaclava,Birolathe,Birolathe,,,,,,,,,Balaclava pasamontañas militar táctico bandana moto,,,09/11/2023,Mecado Libre,QA,Jorge Suárez Hernández,Jorge Suárez Hernández en custodia 09/11/2023
+151.0,,,,,NO,,,NO,Móvil,Motorola,G42,ZY32HD2RLB,353028756059634.0,16MP,50MP+ 2MP + 8MP,4GB,128GB,Android13,5579478815.0,,,,1/24/2025,Luis Hector Garcia Soriano  24/01/2025,QA,María Fernanda Umaña Roldán ,María Fernanda Umaña Roldán en custodia 05/02/2025
+152.0,,,,,NO,,,NO,Móvil,Samsung,Galaxy A12,R58RB3YFQSM,352213731863802.0,8MP,48MP,4GB,64GB,Android 12,,,,,1/24/2025,Luis Hector Garcia Soriano  24/01/2025,QA,Andrea Cerón González,Andrea Cerón González
 ,,,,,NO,,,,Móvil,Huawei,Y5,,867701045525511.0,,,,32 G,,,,,,11/18/2021,,DICIO,Naresh,10/01/2021
 ,,,,,NO,,,,Móvil,Samsung,Samsung Galaxy A50,,352111111959622.0,,,,128 GB,,,,,,11/18/2021,,DICIO,Naresh,10/01/2021
 ,,,,,NO,,,,Móvil,Lanix,Ilium x510,,356309074189650.0,,,,8 GB,,,,,,10/8/2021,,DICIO,Dahir,

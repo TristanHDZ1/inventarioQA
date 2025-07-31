@@ -86,6 +86,11 @@ public class InventarioController {
         return "miembros";
     }
 
+       @GetMapping("/historial")
+    public String historial() {
+        return "historial";
+    }
+
     @GetMapping("/nuevo-dispositivo")
     public String nuevoDispositivo(Model model) {
         model.addAttribute("device", new Device());
@@ -120,14 +125,14 @@ public String guardarDispositivo(@ModelAttribute Device device) {
             existente.setAsignadoEnActivoFijo(device.getAsignadoEnActivoFijo());
             existente.setPlacaActivoFijo(device.getPlacaActivoFijo());
 
-            // Las imágenes NO se modifican aquí
+            
             deviceRepository.save(existente);
         } else {
-            // Si no existía, guarda como nuevo
+            
             deviceRepository.save(device);
         }
     } else {
-        // Si no hay ID, se trata de un nuevo registro
+        
         deviceRepository.save(device);
     }
 
@@ -141,27 +146,30 @@ public String guardarDispositivo(@ModelAttribute Device device) {
     }
 
     @GetMapping("/dispositivo/{id}")
-    public String verDetalleDispositivo(@PathVariable Long id, Model model) {
-        Device device = deviceRepository.findById(id).orElse(null);
-        model.addAttribute("device", device);
+public String verDetalleDispositivo(@PathVariable Long id, Model model) {
+    Device device = deviceRepository.findById(id).orElse(null);
+    model.addAttribute("device", device);
 
-        Map<String, String> imagenes = new LinkedHashMap<>();
-        imagenes.put("fotofrente", "Foto frontal del dispositivo");
-        imagenes.put("fotoreverso", "Foto reverso del dispositivo");
-        imagenes.put("fotoencendido", "Foto del dispositivo encendido");
-        imagenes.put("foto1", "Foto 1");
-        imagenes.put("foto2", "Foto 2");
-        imagenes.put("foto3", "Foto 3");
-        imagenes.put("foto4", "Foto 4");
-        imagenes.put("foto5", "Foto 5");
-        imagenes.put("foto6", "Foto 6");
-        imagenes.put("fotoserie", "Foto del número de serie");
-        imagenes.put("cartaentrega", "Carta de entrega");
+    Map<String, String> imagenes = new LinkedHashMap<>();
 
-        model.addAttribute("imagenes", imagenes);
-
-        return "detalle-dispositivo";
+    if (device != null) {
+        if (device.getFotoFrente() != null) imagenes.put("fotofrente", "Foto frontal del dispositivo");
+        if (device.getFotoReverso() != null) imagenes.put("fotoreverso", "Foto reverso del dispositivo");
+        if (device.getFotoEncendido() != null) imagenes.put("fotoencendido", "Foto del dispositivo encendido");
+        if (device.getFoto1() != null) imagenes.put("foto1", "Foto 1");
+        if (device.getFoto2() != null) imagenes.put("foto2", "Foto 2");
+        if (device.getFoto3() != null) imagenes.put("foto3", "Foto 3");
+        if (device.getFoto4() != null) imagenes.put("foto4", "Foto 4");
+        if (device.getFoto5() != null) imagenes.put("foto5", "Foto 5");
+        if (device.getFoto6() != null) imagenes.put("foto6", "Foto 6");
+        if (device.getFotoSerie() != null) imagenes.put("fotoserie", "Foto del número de serie");
+        if (device.getCartaEntrega() != null) imagenes.put("cartaentrega", "Carta de entrega");
     }
+
+    model.addAttribute("imagenes", imagenes);
+
+    return "detalle-dispositivo";
+}
 
     @GetMapping("/dispositivos/base")
     public String mostrarDispositivosPorCategoria(@RequestParam(value = "categoria", required = false) String categoria, Model model) {
